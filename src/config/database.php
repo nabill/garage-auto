@@ -1,8 +1,8 @@
 <?php
-$db_host = 'localhost';
-$db_name = 'garage_auto';
-$db_user = 'root';
-$db_pass = '';
+$db_host = getenv('DB_HOST') ?: 'localhost';
+$db_name = getenv('DB_NAME') ?: 'garage_auto';
+$db_user = getenv('DB_USER') ?: 'root';
+$db_pass = getenv('DB_PASS') ?: '';
 
 try {
     $pdo = new PDO(
