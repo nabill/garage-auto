@@ -1,0 +1,104 @@
+/* Garage Auto - Public Styles */
+
+:root {
+    --primary: #0d6efd;
+    --dark: #212529;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+/* Hero banner */
+.hero {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    color: white;
+    padding: 5rem 0;
+    margin-top: -1.5rem;
+    margin-bottom: 2rem;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Service cards */
+.service-card {
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.service-card .card-body {
+    padding: 2rem;
+}
+
+.service-card .bi {
+    font-size: 2.5rem;
+    color: var(--primary);
+}
+
+/* News cards */
+.news-card {
+    transition: transform 0.2s;
+}
+
+.news-card:hover {
+    transform: translateY(-2px);
+}
+
+.news-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Service detail page */
+.service-detail-icon {
+    font-size: 4rem;
+    color: var(--primary);
+}
+
+/* Footer */
+footer .table-dark {
+    --bs-table-bg: transparent;
+    --bs-table-color: #adb5bd;
+    font-size: 0.9rem;
+}
+
+/* Forms */
+.form-section {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* RDV confirmation */
+.confirmation-box {
+    background: #d1e7dd;
+    border: 1px solid #badbcc;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Badge statuts */
+.badge-en_attente { background-color: #ffc107; color: #212529; }
+.badge-confirme { background-color: #198754; }
+.badge-termine { background-color: #0dcaf0; color: #212529; }
+.badge-annule { background-color: #dc3545; }
