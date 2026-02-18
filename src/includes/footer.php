@@ -3,12 +3,15 @@
 <?php
 $footer_hours = get_opening_hours($pdo);
 ?>
-<footer class="bg-dark text-light py-5 mt-5">
+<footer class="site-footer mt-5">
     <div class="container">
         <div class="row">
             <div class="col-md-4 mb-4">
-                <h5><i class="bi bi-wrench-adjustable-circle"></i> Garage Auto</h5>
-                <p class="text-muted">Votre garage de confiance pour l'entretien et la réparation de votre véhicule.</p>
+                <div class="footer-brand">
+                    <span class="brand-icon"><i class="bi bi-wrench-adjustable-circle"></i></span>
+                    Garage Auto
+                </div>
+                <p class="footer-desc">Votre garage de confiance pour l'entretien et la réparation de votre véhicule. Professionnalisme et qualité depuis plus de 20 ans.</p>
             </div>
             <div class="col-md-4 mb-4">
                 <h5>Horaires d'ouverture</h5>
@@ -17,11 +20,11 @@ $footer_hours = get_opening_hours($pdo);
                     <?php foreach ($footer_hours as $fh): ?>
                         <tr>
                             <td><?= day_name($fh['day_of_week']) ?></td>
-                            <td>
+                            <td class="text-end">
                                 <?php if ($fh['open_time'] && $fh['close_time']): ?>
                                     <?= format_time($fh['open_time']) ?> – <?= format_time($fh['close_time']) ?>
                                 <?php else: ?>
-                                    <span class="text-muted">Fermé</span>
+                                    <span style="color:var(--gray-600);">Fermé</span>
                                 <?php endif; ?>
                             </td>
                         </tr>
@@ -31,16 +34,16 @@ $footer_hours = get_opening_hours($pdo);
             </div>
             <div class="col-md-4 mb-4">
                 <h5>Contact</h5>
-                <ul class="list-unstyled text-muted">
-                    <li><i class="bi bi-geo-alt"></i> 123 Rue du Garage, 75000 Paris</li>
-                    <li><i class="bi bi-telephone"></i> 01 23 45 67 89</li>
-                    <li><i class="bi bi-envelope"></i> contact@garage-auto.fr</li>
+                <ul class="contact-list">
+                    <li><i class="bi bi-geo-alt-fill"></i> 123 Rue du Garage, 75000 Paris</li>
+                    <li><i class="bi bi-telephone-fill"></i> 01 23 45 67 89</li>
+                    <li><i class="bi bi-envelope-fill"></i> contact@garage-auto.fr</li>
                 </ul>
-                <a href="/contact.php" class="btn btn-outline-light btn-sm">Nous contacter</a>
+                <a href="/contact.php" class="btn btn-outline-light btn-sm mt-2"><i class="bi bi-arrow-right me-1"></i>Nous contacter</a>
             </div>
         </div>
-        <hr class="border-secondary">
-        <p class="text-center text-muted mb-0">&copy; <?= date('Y') ?> Garage Auto. Tous droits réservés.</p>
+        <hr>
+        <p class="text-center footer-bottom mb-0">&copy; <?= date('Y') ?> Garage Auto. Tous droits réservés.</p>
     </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

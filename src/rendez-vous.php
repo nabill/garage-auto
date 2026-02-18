@@ -24,12 +24,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($description === '') $errors[] = 'La description est obligatoire.';
     if ($date_rdv === '') $errors[] = 'La date est obligatoire.';
 
-    // Validate date is not in the past
     if ($date_rdv && $date_rdv <= date('Y-m-d')) {
         $errors[] = 'La date doit être dans le futur.';
     }
 
-    // Validate date is not a closed day
     if ($date_rdv && empty($errors)) {
         $dow = (int)date('w', strtotime($date_rdv));
         $stmt = $pdo->prepare('SELECT is_closed FROM weekly_closures WHERE day_of_week = ?');
@@ -46,7 +44,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
     }
 
-    // Validate model belongs to brand
     if ($brand_id && $model_id && empty($errors)) {
         $stmt = $pdo->prepare('SELECT COUNT(*) FROM car_models WHERE id = ? AND brand_id = ?');
         $stmt->execute([$model_id, $brand_id]);
@@ -66,19 +63,20 @@ require __DIR__ . '/includes/header.php';
 ?>
 
 <div class="form-section">
-    <h1 class="mb-4">Prendre rendez-vous</h1>
-    <p class="text-muted">Remplissez le formulaire ci-dessous et nous vous recontacterons pour confirmer votre rendez-vous.</p>
+    <h1 class="section-title text-start mb-1">Prendre rendez-vous</h1>
+    <div class="section-divider" style="margin-left:0;"></div>
+    <p class="text-muted mb-4">Remplissez le formulaire ci-dessous et nous vous recontacterons pour confirmer votre rendez-vous.</p>
 
     <?php foreach ($errors as $e): ?>
         <div class="alert alert-danger"><?= h($e) ?></div>
     <?php endforeach; ?>
 
-    <div class="card">
+    <div class="card form-card">
         <div class="card-body">
             <form method="post">
                 <?= csrf_field() ?>
 
-                <h5 class="mb-3">Vos informations</h5>
+                <div class="form-section-label"><i class="bi bi-person-fill"></i> Vos informations</div>
                 <div class="mb-3">
                     <label for="client_nom" class="form-label">Nom complet *</label>
                     <input type="text" class="form-control" id="client_nom" name="client_nom" value="<?= h($client_nom ?? '') ?>" required>
@@ -94,8 +92,8 @@ require __DIR__ . '/includes/header.php';
                     </div>
                 </div>
 
-                <hr>
-                <h5 class="mb-3">Votre véhicule</h5>
+                <hr class="form-divider">
+                <div class="form-section-label"><i class="bi bi-car-front-fill"></i> Votre véhicule</div>
                 <div class="row">
                     <div class="col-md-6 mb-3">
                         <label for="brand_id" class="form-label">Marque *</label>
@@ -114,18 +112,18 @@ require __DIR__ . '/includes/header.php';
                     </div>
                 </div>
 
-                <hr>
-                <h5 class="mb-3">Rendez-vous</h5>
+                <hr class="form-divider">
+                <div class="form-section-label"><i class="bi bi-calendar-event-fill"></i> Rendez-vous</div>
                 <div class="mb-3">
                     <label for="date_rdv" class="form-label">Date souhaitée *</label>
                     <input type="date" class="form-control" id="date_rdv" name="date_rdv" value="<?= h($date_rdv ?? '') ?>" required>
                 </div>
-                <div class="mb-3">
+                <div class="mb-4">
                     <label for="description" class="form-label">Description de l'intervention *</label>
                     <textarea class="form-control" id="description" name="description" rows="4" required><?= h($description ?? '') ?></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-primary btn-lg w-100">Envoyer la demande</button>
+                <button type="submit" class="btn btn-primary btn-lg w-100"><i class="bi bi-send me-1"></i> Envoyer la demande</button>
             </form>
         </div>
     </div>

@@ -22,7 +22,7 @@ require __DIR__ . '/../includes/header.php';
         <div class="card service-card h-100">
             <div class="card-body d-flex">
                 <div class="me-4">
-                    <i class="bi <?= $svc['icon'] ?>" style="font-size:3rem; color:var(--primary);"></i>
+                    <div class="service-icon" style="width:56px; height:56px;"><i class="bi <?= $svc['icon'] ?>"></i></div>
                 </div>
                 <div>
                     <h4 class="card-title"><?= $svc['title'] ?></h4>

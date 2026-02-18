@@ -21,39 +21,35 @@ $upcoming = $pdo->query("SELECT a.*, cb.nom AS marque, cm.nom AS modele
 require __DIR__ . '/includes/header.php';
 ?>
 
-<h1 class="mb-4">Tableau de bord</h1>
+<h1 class="admin-page-title">Tableau de bord</h1>
 
 <div class="row g-4 mb-4">
     <div class="col-md-3">
-        <div class="card text-white bg-primary">
-            <div class="card-body">
-                <h5 class="card-title">RDV aujourd'hui</h5>
-                <p class="display-6"><?= $rdv_today ?></p>
-            </div>
+        <div class="stat-card stat-primary">
+            <i class="bi bi-calendar-day stat-icon"></i>
+            <div class="stat-label">RDV aujourd'hui</div>
+            <div class="stat-value"><?= $rdv_today ?></div>
         </div>
     </div>
     <div class="col-md-3">
-        <div class="card text-white bg-warning">
-            <div class="card-body">
-                <h5 class="card-title">En attente</h5>
-                <p class="display-6"><?= $rdv_pending ?></p>
-            </div>
+        <div class="stat-card stat-warning">
+            <i class="bi bi-hourglass-split stat-icon"></i>
+            <div class="stat-label">En attente</div>
+            <div class="stat-value"><?= $rdv_pending ?></div>
         </div>
     </div>
     <div class="col-md-3">
-        <div class="card text-white bg-success">
-            <div class="card-body">
-                <h5 class="card-title">Total RDV</h5>
-                <p class="display-6"><?= $rdv_total ?></p>
-            </div>
+        <div class="stat-card stat-success">
+            <i class="bi bi-calendar-check stat-icon"></i>
+            <div class="stat-label">Total RDV</div>
+            <div class="stat-value"><?= $rdv_total ?></div>
         </div>
     </div>
     <div class="col-md-3">
-        <div class="card text-white bg-danger">
-            <div class="card-body">
-                <h5 class="card-title">Messages non lus</h5>
-                <p class="display-6"><?= $messages_unread ?></p>
-            </div>
+        <div class="stat-card stat-danger">
+            <i class="bi bi-envelope stat-icon"></i>
+            <div class="stat-label">Messages non lus</div>
+            <div class="stat-value"><?= $messages_unread ?></div>
         </div>
     </div>
 </div>

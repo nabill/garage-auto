@@ -39,28 +39,30 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 require __DIR__ . '/includes/header.php';
 ?>
 
-<h1 class="mb-4">Contactez-nous</h1>
+<h1 class="section-title text-start mb-1">Contactez-nous</h1>
+<div class="section-divider" style="margin-left:0;"></div>
+<p class="text-muted mb-4">Nous sommes à votre écoute. N'hésitez pas à nous contacter pour toute question.</p>
 
-<div class="row">
-    <div class="col-md-5 mb-4">
-        <div class="card h-100">
-            <div class="card-body">
-                <h5><i class="bi bi-geo-alt-fill text-primary"></i> Adresse</h5>
-                <p>123 Rue du Garage<br>75000 Paris</p>
+<div class="row g-4">
+    <div class="col-lg-5 mb-4">
+        <div class="card contact-info-card h-100">
+            <div class="card-body p-4">
+                <h5><i class="bi bi-geo-alt-fill"></i> Adresse</h5>
+                <p class="text-muted">123 Rue du Garage<br>75000 Paris</p>
 
-                <h5><i class="bi bi-telephone-fill text-primary"></i> Téléphone</h5>
-                <p>01 23 45 67 89</p>
+                <h5><i class="bi bi-telephone-fill"></i> Téléphone</h5>
+                <p class="text-muted">01 23 45 67 89</p>
 
-                <h5><i class="bi bi-envelope-fill text-primary"></i> Email</h5>
-                <p>contact@garage-auto.fr</p>
+                <h5><i class="bi bi-envelope-fill"></i> Email</h5>
+                <p class="text-muted">contact@garage-auto.fr</p>
 
-                <h5><i class="bi bi-clock-fill text-primary"></i> Horaires</h5>
-                <table class="table table-sm">
+                <h5><i class="bi bi-clock-fill"></i> Horaires</h5>
+                <table class="table table-sm mb-0">
                     <tbody>
                     <?php foreach ($hours as $h_row): ?>
                         <tr>
-                            <td><?= day_name($h_row['day_of_week']) ?></td>
-                            <td>
+                            <td class="fw-medium"><?= day_name($h_row['day_of_week']) ?></td>
+                            <td class="text-end">
                                 <?php if ($h_row['open_time'] && $h_row['close_time']): ?>
                                     <?= format_time($h_row['open_time']) ?> – <?= format_time($h_row['close_time']) ?>
                                 <?php else: ?>
@@ -75,10 +77,10 @@ require __DIR__ . '/includes/header.php';
         </div>
     </div>
 
-    <div class="col-md-7">
+    <div class="col-lg-7">
         <?php if ($success): ?>
             <div class="alert alert-success">
-                <i class="bi bi-check-circle"></i> Votre message a bien été envoyé. Nous vous répondrons dans les plus brefs délais.
+                <i class="bi bi-check-circle-fill me-1"></i> Votre message a bien été envoyé. Nous vous répondrons dans les plus brefs délais.
             </div>
         <?php endif; ?>
 
@@ -86,18 +88,20 @@ require __DIR__ . '/includes/header.php';
             <div class="alert alert-danger"><?= h($e) ?></div>
         <?php endforeach; ?>
 
-        <div class="card">
+        <div class="card form-card">
             <div class="card-body">
-                <h5 class="card-title">Envoyez-nous un message</h5>
+                <h5 class="card-title mb-3"><i class="bi bi-chat-dots" style="color:var(--orange);"></i> Envoyez-nous un message</h5>
                 <form method="post">
                     <?= csrf_field() ?>
-                    <div class="mb-3">
-                        <label for="nom" class="form-label">Nom *</label>
-                        <input type="text" class="form-control" id="nom" name="nom" value="<?= h($nom ?? '') ?>" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email *</label>
-                        <input type="email" class="form-control" id="email" name="email" value="<?= h($email ?? '') ?>" required>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="nom" class="form-label">Nom *</label>
+                            <input type="text" class="form-control" id="nom" name="nom" value="<?= h($nom ?? '') ?>" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="email" class="form-label">Email *</label>
+                            <input type="email" class="form-control" id="email" name="email" value="<?= h($email ?? '') ?>" required>
+                        </div>
                     </div>
                     <div class="mb-3">
                         <label for="sujet" class="form-label">Sujet *</label>
@@ -107,7 +111,7 @@ require __DIR__ . '/includes/header.php';
                         <label for="message" class="form-label">Message *</label>
                         <textarea class="form-control" id="message" name="message" rows="5" required><?= h($message ?? '') ?></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                    <button type="submit" class="btn btn-primary"><i class="bi bi-send me-1"></i> Envoyer</button>
                 </form>
             </div>
         </div>
