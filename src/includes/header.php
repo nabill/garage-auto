@@ -12,7 +12,7 @@
     <link href="/assets/css/style.css" rel="stylesheet">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark navbar-main sticky-top">
+<nav class="navbar navbar-expand-lg navbar-light navbar-main sticky-top">
     <div class="container">
         <a class="navbar-brand" href="/">
             <span class="brand-icon"><i class="bi bi-wrench-adjustable-circle"></i></span>
@@ -49,6 +49,6 @@
         </div>
     </div>
 </nav>
-<main class="py-4">
-    <div class="container">
+<main>
+    <div class="container pt-4">
         <?= display_flash() ?>

@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-Content \"D:\\\\GITHUB\\\\garage-auto\\\\just-precision-auto-care\\\\template.html\")",
+      "Bash(Measure-Object:*)",
+      "Bash(powershell -Command \"Get-Content ''D:\\\\GITHUB\\\\garage-auto\\\\just-precision-auto-care\\\\template.html'' | Measure-Object -Line\")",
+      "Bash(powershell -Command \"Get-Content ''D:\\\\GITHUB\\\\garage-auto\\\\just-precision-auto-care\\\\template.html'' -First 5 | ForEach-Object { $_Substring\\(0, [Math]::Min\\(2000, $_Length\\)\\) }\")",
+      "Bash(powershell -Command:*)",
+      "Bash(node -e:*)"
+    ]
+  }
+}
