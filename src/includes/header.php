@@ -24,25 +24,25 @@
                     <span></span>
                     <span></span>
                 </button>
-                <div class="logo"><img src="/images/benscope-logo-big.png" alt="" style="height: 55px;cursor:pointer" onclick="window.open('/');"></div>
+                <div class="logo"><img src="/assets/img/logo.png" alt="" style="height: 55px;cursor:pointer" onclick="window.open('/');"></div>
             </div>
             <div class="menu">
                 
-            <a class="btn" href="/services/" role="button" data-bs-toggle="dropdown">Services</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="btn" href="/services/mecanique-generale.php">Mécanique générale</a></li>
-                        <li><a class="dropdown-item" href="/services/entretien-vidange.php">Entretien / Vidange</a></li>
-                        <li><a class="dropdown-item" href="/services/pneumatiques.php">Pneumatiques</a></li>
-                        <li><a class="dropdown-item" href="/services/diagnostic.php">Diagnostic électronique</a></li>
-                        <li><a class="dropdown-item" href="/services/carrosserie-peinture.php">Carrosserie / Peinture</a></li>
-                        <li><a class="dropdown-item" href="/services/climatisation.php">Climatisation</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="/services/">Tous nos services</a></li>
-                    </ul>
+            
 
 
                 <a class="btn" href="/" style="padding: 11px;border-width:0px;font-size:17px;">Accueil</a>
-                <a class="btn" style="padding: 11px;border-width:0px;font-size:17px;" href="/tracking">Order tracking</a>
+
+                <a class="btn" style="padding: 11px;border-width:0px;font-size:17px;" href="/services/" role="button" data-bs-toggle="dropdown">Services</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="btn" style="width: 235px;padding: 11px;border-width:0px;font-size:16px;" href="/services/mecanique-generale.php">Mécanique générale</a></li>
+                        <li><a class="btn" style="width: 235px;padding: 11px;border-width:0px;font-size:16px;" href="/services/entretien-vidange.php">Entretien / Vidange</a></li>
+                        <li><a class="btn" style="width: 235px;padding: 11px;border-width:0px;font-size:16px;" href="/services/pneumatiques.php">Pneumatiques</a></li>
+                        <li><a class="btn" style="width: 235px;padding: 11px;border-width:0px;font-size:16px;" href="/services/diagnostic.php">Diagnostic électronique</a></li>
+                        <li><a class="btn" style="width: 235px;padding: 11px;border-width:0px;font-size:16px;" href="/services/carrosserie-peinture.php">Carrosserie / Peinture</a></li>
+                        <li><a class="btn" style="width: 235px;padding: 11px;border-width:0px;font-size:16px;" href="/services/climatisation.php">Climatisation</a></li>
+                    </ul>
+
                 <a class="btn" style="padding: 11px;border-width:0px;font-size:17px;" href="/contact.php">Contact</a>
             </div>
             <div>
@@ -68,7 +68,7 @@
     <div class="mobile-menu">
         <div style="min-height: Calc(100vh - 72px);">
             <a class="btn" style="border-left-width: 0px; border-right-width: 0px; text-align: start;border-color:#dddddd;font-size:17px;" href="/">Accueil</a>
-            <a class="btn" style="border-left-width: 0px; border-right-width: 0px; text-align: start;border-color:#dddddd;font-size:17px;" href="/tracking">Order tracking</a>
+            <a class="btn" style="border-left-width: 0px; border-right-width: 0px; text-align: start;border-color:#dddddd;font-size:17px;" href="/services/">Services</a>
             <a class="btn" style="border-left-width: 0px; border-right-width: 0px; text-align: start;border-color:#dddddd;font-size:17px;" href="/contact.php">Contact</a>
         </div>
     </div>
