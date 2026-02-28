@@ -35,15 +35,26 @@
 
                 <a class="btn" style="padding: 11px;border-width:0px;font-size:17px;" href="/services/" role="button" data-bs-toggle="dropdown">Services</a>
                     <ul class="dropdown-menu">
-                        <li><a class="btn" style="width: 235px;padding: 11px;border-width:0px;font-size:16px;" href="/services/revision.php">Révision</a></li>
-                        <li><a class="btn" style="width: 235px;padding: 11px;border-width:0px;font-size:16px;" href="/services/batterie.php">Batterie</a></li>
-                        <li><a class="btn" style="width: 235px;padding: 11px;border-width:0px;font-size:16px;" href="/services/freins.php">Freins</a></li>
-                        <li><a class="btn" style="width: 235px;padding: 11px;border-width:0px;font-size:16px;" href="/services/mecanique-generale.php">Mécanique générale</a></li>
                         <li><a class="btn" style="width: 235px;padding: 11px;border-width:0px;font-size:16px;" href="/services/entretien-vidange.php">Entretien / Vidange</a></li>
+                        <li><a class="btn" style="width: 235px;padding: 11px;border-width:0px;font-size:16px;" href="/services/revision.php">Révision Premium</a></li>
+                        <li><a class="btn" style="width: 235px;padding: 11px;border-width:0px;font-size:16px;" href="/services/controle-technique.php">Contrôle technique</a></li>
+                        <li><hr class="dropdown-divider mx-2"></li>
+                        <li><a class="btn" style="width: 235px;padding: 11px;border-width:0px;font-size:16px;" href="/services/mecanique-generale.php">Mécanique générale</a></li>
+                        <li><a class="btn" style="width: 235px;padding: 11px;border-width:0px;font-size:16px;" href="/services/courroie-distribution.php">Courroie de distribution</a></li>
+                        <li><a class="btn" style="width: 235px;padding: 11px;border-width:0px;font-size:16px;" href="/services/embrayage.php">Embrayage</a></li>
+                        <li><hr class="dropdown-divider mx-2"></li>
+                        <li><a class="btn" style="width: 235px;padding: 11px;border-width:0px;font-size:16px;" href="/services/freins.php">Freins / Plaquettes</a></li>
+                        <li><a class="btn" style="width: 235px;padding: 11px;border-width:0px;font-size:16px;" href="/services/suspension-amortisseurs.php">Suspension / Amortisseurs</a></li>
+                        <li><hr class="dropdown-divider mx-2"></li>
+                        <li><a class="btn" style="width: 235px;padding: 11px;border-width:0px;font-size:16px;" href="/services/batterie.php">Batterie</a></li>
+                        <li><a class="btn" style="width: 235px;padding: 11px;border-width:0px;font-size:16px;" href="/services/climatisation.php">Climatisation</a></li>
                         <li><a class="btn" style="width: 235px;padding: 11px;border-width:0px;font-size:16px;" href="/services/pneumatiques.php">Pneumatiques</a></li>
+                        <li><hr class="dropdown-divider mx-2"></li>
                         <li><a class="btn" style="width: 235px;padding: 11px;border-width:0px;font-size:16px;" href="/services/diagnostic.php">Diagnostic électronique</a></li>
                         <li><a class="btn" style="width: 235px;padding: 11px;border-width:0px;font-size:16px;" href="/services/carrosserie-peinture.php">Carrosserie / Peinture</a></li>
-                        <li><a class="btn" style="width: 235px;padding: 11px;border-width:0px;font-size:16px;" href="/services/climatisation.php">Climatisation</a></li>
+                        <li><a class="btn" style="width: 235px;padding: 11px;border-width:0px;font-size:16px;" href="/services/vitrage.php">Vitrage / Pare-brise</a></li>
+                        <li><hr class="dropdown-divider mx-2"></li>
+                        <li><a class="btn" style="width: 235px;padding: 11px;border-width:0px;font-size:16px;color:#ff5d17;font-weight:600;" href="/services/">Tous nos services →</a></li>
                     </ul>
 
                 <a class="btn" style="padding: 11px;border-width:0px;font-size:17px;" href="/contact.php">Contact</a>
@@ -71,7 +82,21 @@
     <div class="mobile-menu">
         <div style="min-height: Calc(100vh - 72px);">
             <a class="btn" style="border-left-width: 0px; border-right-width: 0px; text-align: start;border-color:#dddddd;font-size:17px;" href="/">Accueil</a>
-            <a class="btn" style="border-left-width: 0px; border-right-width: 0px; text-align: start;border-color:#dddddd;font-size:17px;" href="/services/">Services</a>
+            <a class="btn" style="border-left-width: 0px; border-right-width: 0px; text-align: start;border-color:#dddddd;font-size:17px;font-weight:600;" href="/services/">Services</a>
+            <a class="btn" style="border-left-width: 0px; border-right-width: 0px; text-align: start;border-color:#dddddd;font-size:15px;padding-left:28px;" href="/services/entretien-vidange.php">Entretien / Vidange</a>
+            <a class="btn" style="border-left-width: 0px; border-right-width: 0px; text-align: start;border-color:#dddddd;font-size:15px;padding-left:28px;" href="/services/revision.php">Révision Premium</a>
+            <a class="btn" style="border-left-width: 0px; border-right-width: 0px; text-align: start;border-color:#dddddd;font-size:15px;padding-left:28px;" href="/services/controle-technique.php">Contrôle technique</a>
+            <a class="btn" style="border-left-width: 0px; border-right-width: 0px; text-align: start;border-color:#dddddd;font-size:15px;padding-left:28px;" href="/services/mecanique-generale.php">Mécanique générale</a>
+            <a class="btn" style="border-left-width: 0px; border-right-width: 0px; text-align: start;border-color:#dddddd;font-size:15px;padding-left:28px;" href="/services/courroie-distribution.php">Courroie de distribution</a>
+            <a class="btn" style="border-left-width: 0px; border-right-width: 0px; text-align: start;border-color:#dddddd;font-size:15px;padding-left:28px;" href="/services/embrayage.php">Embrayage</a>
+            <a class="btn" style="border-left-width: 0px; border-right-width: 0px; text-align: start;border-color:#dddddd;font-size:15px;padding-left:28px;" href="/services/freins.php">Freins / Plaquettes</a>
+            <a class="btn" style="border-left-width: 0px; border-right-width: 0px; text-align: start;border-color:#dddddd;font-size:15px;padding-left:28px;" href="/services/suspension-amortisseurs.php">Suspension / Amortisseurs</a>
+            <a class="btn" style="border-left-width: 0px; border-right-width: 0px; text-align: start;border-color:#dddddd;font-size:15px;padding-left:28px;" href="/services/batterie.php">Batterie</a>
+            <a class="btn" style="border-left-width: 0px; border-right-width: 0px; text-align: start;border-color:#dddddd;font-size:15px;padding-left:28px;" href="/services/climatisation.php">Climatisation</a>
+            <a class="btn" style="border-left-width: 0px; border-right-width: 0px; text-align: start;border-color:#dddddd;font-size:15px;padding-left:28px;" href="/services/pneumatiques.php">Pneumatiques</a>
+            <a class="btn" style="border-left-width: 0px; border-right-width: 0px; text-align: start;border-color:#dddddd;font-size:15px;padding-left:28px;" href="/services/diagnostic.php">Diagnostic électronique</a>
+            <a class="btn" style="border-left-width: 0px; border-right-width: 0px; text-align: start;border-color:#dddddd;font-size:15px;padding-left:28px;" href="/services/carrosserie-peinture.php">Carrosserie / Peinture</a>
+            <a class="btn" style="border-left-width: 0px; border-right-width: 0px; text-align: start;border-color:#dddddd;font-size:15px;padding-left:28px;" href="/services/vitrage.php">Vitrage / Pare-brise</a>
             <a class="btn" style="border-left-width: 0px; border-right-width: 0px; text-align: start;border-color:#dddddd;font-size:17px;" href="/contact.php">Contact</a>
         </div>
     </div>
