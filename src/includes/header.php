@@ -35,6 +35,9 @@
 
                 <a class="btn" style="padding: 11px;border-width:0px;font-size:17px;" href="/services/" role="button" data-bs-toggle="dropdown">Services</a>
                     <ul class="dropdown-menu">
+                        <li><a class="btn" style="width: 235px;padding: 11px;border-width:0px;font-size:16px;" href="/services/revision.php">Révision</a></li>
+                        <li><a class="btn" style="width: 235px;padding: 11px;border-width:0px;font-size:16px;" href="/services/batterie.php">Batterie</a></li>
+                        <li><a class="btn" style="width: 235px;padding: 11px;border-width:0px;font-size:16px;" href="/services/freins.php">Freins</a></li>
                         <li><a class="btn" style="width: 235px;padding: 11px;border-width:0px;font-size:16px;" href="/services/mecanique-generale.php">Mécanique générale</a></li>
                         <li><a class="btn" style="width: 235px;padding: 11px;border-width:0px;font-size:16px;" href="/services/entretien-vidange.php">Entretien / Vidange</a></li>
                         <li><a class="btn" style="width: 235px;padding: 11px;border-width:0px;font-size:16px;" href="/services/pneumatiques.php">Pneumatiques</a></li>
