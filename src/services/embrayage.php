@@ -43,6 +43,12 @@ require __DIR__ . '/../includes/header.php';
     </div>
 </div>
 
+<div class="row mb-4">
+    <div class="col-12">
+        <img src="/assets/img/services/embrayage.jpg" alt="Remplacement embrayage" class="w-100 rounded-3 shadow-sm" style="height:400px;object-fit:cover;object-position:center;">
+    </div>
+</div>
+
 <hr class="my-5">
 
 <div class="row mb-5">

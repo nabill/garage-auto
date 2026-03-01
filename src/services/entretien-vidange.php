@@ -4,36 +4,26 @@ $page_title = 'Entretien / Vidange';
 require __DIR__ . '/../includes/header.php';
 ?>
 
-<nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="/">Accueil</a></li>
-        <li class="breadcrumb-item"><a href="/services/">Services</a></li>
-        <li class="breadcrumb-item active">Entretien / Vidange</li>
-    </ol>
-</nav>
-
 <!-- Page header -->
 <div class="row align-items-center mb-5">
-    <div class="col-md-2 text-center d-none d-md-block">
-        <i class="bi bi-droplet-half service-detail-icon"></i>
-    </div>
-    <div class="col-md-10">
-        <span class="badge text-uppercase mb-2" style="background-color:#ff5d17;letter-spacing:.08em;">Entretien régulier</span>
-        <h1 class="mb-1">Entretien / Vidange</h1>
+    <div class="col-12">
+        <h1 class="mb-1" style="color: #ff5d17;font-weight: 600;">Entretien / Vidange</h1>
         <p class="lead text-muted">Un entretien régulier est la meilleure protection pour la longévité et les performances de votre véhicule.</p>
     </div>
 </div>
 
 <!-- Intro -->
 <div class="row mb-5">
-    <div class="col-md-8">
-        <p class="fs-5">La vidange est le geste d'entretien le plus important pour votre moteur. Elle consiste à remplacer l'huile usée et le filtre à huile pour garantir une lubrification optimale de l'ensemble des organes moteur.</p>
-        <p>Nous utilisons des huiles et des filtres conformes aux spécifications de votre constructeur pour assurer les meilleures performances et préserver votre garantie.</p>
+    <div class="col-md-6">
+        <p class="fs-5" style="line-height: 33px;">La vidange est le geste d'entretien le plus important pour votre moteur. Elle consiste à remplacer l'huile usée et le filtre à huile pour garantir une lubrification optimale de l'ensemble des organes moteur.</p>
+        <p class="fs-5" style="line-height: 33px;">Nous utilisons des huiles et des filtres conformes aux spécifications de votre constructeur pour assurer les meilleures performances et préserver votre garantie.</p>
         <a href="/rendez-vous.php" class="btn btn-primary btn-lg mt-2">
             <i class="bi bi-calendar-check me-2"></i>Prendre rendez-vous
         </a>
     </div>
-    <div class="col-md-4 mt-4 mt-md-0">
+    <div class="col-md-6 mt-4 mt-md-0">
+        <img src="/assets/img/services/vidange-huile-1.png" alt="Entretien et vidange" class="w-100 rounded-3 shadow-sm" style="height:400px;object-fit:cover;object-position:center;">
+    
         <div class="card border-0 shadow-sm h-100">
             <div class="card-body text-center d-flex flex-column justify-content-center p-4">
                 <i class="bi bi-droplet mb-3" style="font-size:2.5rem;color:#ff5d17;"></i>
@@ -42,6 +32,18 @@ require __DIR__ . '/../includes/header.php';
                 <a href="/rendez-vous.php" class="btn btn-outline-primary btn-sm">Prendre RDV</a>
             </div>
         </div>
+    </div>
+</div>
+
+<div class="row mb-4">
+    <div class="col-12">
+        <img src="/assets/img/services/vidange-huile-1.png" alt="Entretien et vidange" class="w-100 rounded-3 shadow-sm" style="height:400px;object-fit:cover;object-position:center;">
+    </div>
+</div>
+
+<div class="row mb-4">
+    <div class="col-12">
+        <img src="/assets/img/services/vidange-huile-2.png" alt="Entretien et vidange" class="w-100 rounded-3 shadow-sm" style="height:400px;object-fit:cover;object-position:center;">
     </div>
 </div>
 
