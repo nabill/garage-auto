@@ -1,0 +1,59 @@
+Here are the recommended images for each service page. These are suggestions for what to search on free stock photo sites like Unsplash, Pexels, or Freepik.
+
+Entretien / Vidange
+Mechanic draining oil from a car engine
+Close-up of an oil filter being replaced
+Engine bay with clean oil being poured
+Révision Premium
+Mechanic inspecting a car on a lift in a modern garage
+Technician checking a service booklet next to a car
+Professional garage interior, clean and well-lit
+Contrôle technique
+Car on an inspection lift with mechanic underneath
+Checklist and clipboard next to a car wheel
+Technician checking brake lights or headlights
+Mécanique générale
+Mechanic working on an open engine bay
+Car lifted on a hydraulic lift in a garage
+Close-up of engine components being repaired
+Courroie de distribution
+Close-up of a timing belt on an engine
+Mechanic holding a new timing belt kit (belt + tensioners)
+Engine with the cover removed showing the belt
+Embrayage
+Disassembled clutch kit (disc, pressure plate, bearing)
+Mechanic removing a gearbox from a car
+Close-up of a worn clutch disc vs new one
+Freins / Plaquettes
+Close-up of brake disc and caliper
+New brake pads next to worn ones (comparison)
+Mechanic replacing brake pads on a wheel hub
+Suspension / Amortisseurs
+New shock absorber being installed
+Car underside showing suspension components
+Old vs new shock absorber side by side
+Batterie
+Mechanic installing a new car battery
+Close-up of a car battery with terminals
+Battery tester connected to a battery
+Climatisation
+Technician connecting a refrigerant recharge machine
+Air conditioning system being serviced
+Cool air vent inside a car interior
+Pneumatiques
+Tire being mounted on a rim with a tire machine
+Close-up of tread wear indicators on a tyre
+Stack of new tyres in a workshop
+Diagnostic électronique
+OBD diagnostic scanner connected to a car port
+Laptop/tablet showing diagnostic data in a garage
+Technician reading fault codes on a screen
+Carrosserie / Peinture
+Car in a paint booth being sprayed
+Mechanic repairing a dented car panel
+Before/after of a repaired scratch or dent
+Vitrage / Pare-brise
+Technician replacing a windshield
+Close-up of a windshield chip being repaired with resin
+New windshield being fitted onto a car frame
+Recommended image format: JPEG, 1200×800px minimum, named clearly (e.g. service-batterie.jpg, service-freins.jpg) and placed in src/assets/img/services/. Once you have the images, I can integrate them into each page.

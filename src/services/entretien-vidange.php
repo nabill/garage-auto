@@ -7,16 +7,26 @@ require __DIR__ . '/../includes/header.php';
 <!-- Page header -->
 <div class="row align-items-center mb-5">
     <div class="col-12">
-        <h1 class="mb-1" style="color: #ff5d17;font-weight: 600;">Entretien / Vidange</h1>
-        <p class="lead text-muted">Un entretien régulier est la meilleure protection pour la longévité et les performances de votre véhicule.</p>
+        <h1 class="mb-3" style="color: #ff5d17;font-weight: 600;">Entretien / Vidange</h1>
+        <!-- <h2>Un entretien régulier est la meilleure protection pour la longévité et les performances de votre véhicule.</h2> -->
+        <h3>Un entretien régulier est la meilleure protection pour la longévité et les performances de votre véhicule.</h3>
+        <!-- <h4>Un entretien régulier est la meilleure protection pour la longévité et les performances de votre véhicule.</h4>
+        <p class="lead text-muted">Un entretien régulier est la meilleure protection pour la longévité et les performances de votre véhicule.</p> -->
     </div>
 </div>
 
 <!-- Intro -->
 <div class="row mb-5">
     <div class="col-md-6">
-        <p class="fs-5" style="line-height: 33px;">La vidange est le geste d'entretien le plus important pour votre moteur. Elle consiste à remplacer l'huile usée et le filtre à huile pour garantir une lubrification optimale de l'ensemble des organes moteur.</p>
-        <p class="fs-5" style="line-height: 33px;">Nous utilisons des huiles et des filtres conformes aux spécifications de votre constructeur pour assurer les meilleures performances et préserver votre garantie.</p>
+        <p class="fs-5 mb-4" style="line-height: 33px;">La vidange est le geste d'entretien le plus important pour votre moteur. Elle consiste à remplacer l'huile usée et le filtre à huile pour garantir une lubrification optimale de l'ensemble des organes moteur.</p>
+        <p class="fs-5 mb-4" style="line-height: 33px;">Nous utilisons des huiles et des filtres conformes aux spécifications de votre constructeur pour assurer les meilleures performances et préserver votre garantie.</p>
+        <button type="submit" class="btn btn-green" id="trackButton" onclick="trackOrder(event)" 
+        style="width: 100%; font-size: 16px;padding: 9px; height: 49px">
+                                    <span id="trackAnimation" class="spinner-border" role="status" style="height:25px; width:25px; margin-right: 7px; display: none" aria-hidden="false"></span>
+                                    <p style="padding-top:9px" id="trackLabel">
+                                    <i class="bi bi-calendar3 me-2" style="font-size: 22px;"></i>
+                                    Prendre rendez-vous</p>
+                                </button>
         <a href="/rendez-vous.php" class="btn btn-primary btn-lg mt-2">
             <i class="bi bi-calendar-check me-2"></i>Prendre rendez-vous
         </a>
