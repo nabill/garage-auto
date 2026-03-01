@@ -4,14 +4,6 @@ $page_title = 'Courroie de distribution';
 require __DIR__ . '/../includes/header.php';
 ?>
 
-<nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="/">Accueil</a></li>
-        <li class="breadcrumb-item"><a href="/services/">Services</a></li>
-        <li class="breadcrumb-item active">Courroie de distribution</li>
-    </ol>
-</nav>
-
 <div class="row align-items-center mb-5">
     <div class="col-md-2 text-center d-none d-md-block">
         <i class="bi bi-arrow-repeat service-detail-icon"></i>
@@ -24,14 +16,16 @@ require __DIR__ . '/../includes/header.php';
 </div>
 
 <div class="row mb-5">
-    <div class="col-md-8">
+    <div class="col-md-6">
         <p class="fs-5">La courroie de distribution synchronise la rotation du vilebrequin et des arbres à cames. Elle assure l'ouverture et la fermeture des soupapes au bon moment. C'est l'une des pièces les plus critiques de votre moteur.</p>
         <p>Si elle casse ou saute, les pistons et les soupapes entrent en collision, provoquant des dégâts moteur souvent irréparables et très coûteux. Ne jamais dépasser l'échéance constructeur.</p>
         <a href="/rendez-vous.php" class="btn btn-primary btn-lg mt-2">
             <i class="bi bi-calendar-check me-2"></i>Vérifier mon échéance de distribution
         </a>
     </div>
-    <div class="col-md-4 mt-4 mt-md-0">
+    <div class="col-md-6 mt-4 mt-md-0">
+        <img src="/assets/img/services/courroie.jpg" alt="Entretien et vidange" class="w-100 rounded-3 shadow-sm" style="height:400px;object-fit:cover;object-position:center;">
+    
         <div class="card border-0 border-start border-4 border-danger shadow-sm h-100">
             <div class="card-body text-center d-flex flex-column justify-content-center p-4">
                 <i class="bi bi-exclamation-triangle-fill mb-3 text-danger" style="font-size:2.5rem;"></i>

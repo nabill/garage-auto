@@ -4,14 +4,6 @@ $page_title = 'Remplacement des plaquettes de frein';
 require __DIR__ . '/../includes/header.php';
 ?>
 
-<nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="/">Accueil</a></li>
-        <li class="breadcrumb-item"><a href="/services/">Services</a></li>
-        <li class="breadcrumb-item active">Freins</li>
-    </ol>
-</nav>
-
 <!-- Page header -->
 <div class="row align-items-center mb-5">
     <div class="col-md-2 text-center d-none d-md-block">
@@ -26,7 +18,7 @@ require __DIR__ . '/../includes/header.php';
 
 <!-- À quoi servent les plaquettes -->
 <div class="row mb-5">
-    <div class="col-md-8">
+    <div class="col-md-6">
         <h2 class="mb-3"><i class="bi bi-question-circle me-2" style="color:#ff5d17;"></i>À quoi servent les plaquettes de frein ?</h2>
         <p class="fs-5">Les plaquettes de frein sont essentielles à votre sécurité. Elles pressent contre les disques pour ralentir ou arrêter votre véhicule.</p>
         <p>Avec le temps, la partie en contact (matériau de friction) s'use. Lorsque l'épaisseur devient trop faible, les plaquettes doivent être remplacées.</p>
@@ -34,7 +26,9 @@ require __DIR__ . '/../includes/header.php';
             <i class="bi bi-calendar-check me-2"></i>Faire vérifier mes freins
         </a>
     </div>
-    <div class="col-md-4 mt-4 mt-md-0">
+    <div class="col-md-6 mt-4 mt-md-0">
+                <img src="/assets/img/services/freins1.png" alt="Changement de batterie" class="w-100 rounded-3 shadow-sm" style="height:400px;object-fit:cover;object-position:center;">
+
         <div class="card border-0 shadow-sm h-100">
             <div class="card-body text-center d-flex flex-column justify-content-center p-4">
                 <i class="bi bi-shield-fill-exclamation mb-3" style="font-size:2.5rem;color:#ff5d17;"></i>

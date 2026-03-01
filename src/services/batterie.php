@@ -4,14 +4,6 @@ $page_title = 'Changement de Batterie';
 require __DIR__ . '/../includes/header.php';
 ?>
 
-<nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="/">Accueil</a></li>
-        <li class="breadcrumb-item"><a href="/services/">Services</a></li>
-        <li class="breadcrumb-item active">Changement de Batterie</li>
-    </ol>
-</nav>
-
 <!-- Page header -->
 <div class="row align-items-center mb-5">
     <div class="col-md-2 text-center d-none d-md-block">
@@ -26,14 +18,16 @@ require __DIR__ . '/../includes/header.php';
 
 <!-- Intro -->
 <div class="row mb-5">
-    <div class="col-md-8">
+    <div class="col-md-6">
         <p class="fs-5">La batterie est essentielle au bon fonctionnement de votre véhicule. Elle permet de démarrer le moteur et alimente tous les équipements électriques.</p>
         <p>Lorsqu'elle montre des signes de faiblesse, il est préférable d'agir avant la panne.</p>
         <a href="/rendez-vous.php" class="btn btn-primary btn-lg mt-2">
             <i class="bi bi-calendar-check me-2"></i>Demandez un diagnostic gratuit
         </a>
     </div>
-    <div class="col-md-4 mt-4 mt-md-0">
+    <div class="col-md-6 mt-4 mt-md-0">
+        <img src="/assets/img/services/batterie.png" alt="Entretien et vidange" class="w-100 rounded-3 shadow-sm" style="height:400px;object-fit:cover;object-position:center;">
+
         <div class="card border-0 shadow-sm h-100">
             <div class="card-body text-center d-flex flex-column justify-content-center p-4">
                 <i class="bi bi-lightning-charge mb-3" style="font-size:2.5rem;color:#ff5d17;"></i>
@@ -42,6 +36,19 @@ require __DIR__ . '/../includes/header.php';
                 <a href="/rendez-vous.php" class="btn btn-outline-primary btn-sm">Prendre RDV</a>
             </div>
         </div>
+    </div>
+</div>
+
+<div class="row mb-5">
+    <div class="col-md-6 mt-4 mt-md-0">
+        <img src="/assets/img/services/batterie3.png" alt="Entretien et vidange" class="w-100 rounded-3 shadow-sm" style="height:400px;object-fit:cover;object-position:center;">
+    </div>
+    <div class="col-md-6">
+        <p class="fs-5">La batterie est essentielle au bon fonctionnement de votre véhicule. Elle permet de démarrer le moteur et alimente tous les équipements électriques.</p>
+        <p>Lorsqu'elle montre des signes de faiblesse, il est préférable d'agir avant la panne.</p>
+        <a href="/rendez-vous.php" class="btn btn-primary btn-lg mt-2">
+            <i class="bi bi-calendar-check me-2"></i>Demandez un diagnostic gratuit
+        </a>
     </div>
 </div>
 
