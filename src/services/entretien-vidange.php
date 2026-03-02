@@ -19,7 +19,7 @@ require __DIR__ . '/../includes/header.php';
 <div class="row mb-5">
     <div class="col-md-6">
         <i class="bi bi-droplet mb-3" style="font-size:3.5rem;color:#ff5d17;"></i>
-        <p class="fs-5 mb-4" style="line-height: 33px;">La vidange est le geste d'entretien le plus important pour votre moteur. Elle consiste à remplacer l'huile usée et le filtre à huile pour garantir une lubrification optimale de l'ensemble des organes moteur.</p>
+        <p class="fs-5 mb-4" style="line-height: 33px;margin-top:15px">La vidange est le geste d'entretien le plus important pour votre moteur. Elle consiste à remplacer l'huile usée et le filtre à huile pour garantir une lubrification optimale de l'ensemble des organes moteur.</p>
         <p class="fs-5 mb-4" style="line-height: 33px;">Nous utilisons des huiles et des filtres conformes aux spécifications de votre constructeur pour assurer les meilleures performances et préserver votre garantie.</p>
         <button type="button" class="btn btn-green" id="btnRDV" onclick="window.location.href='/rendez-vous.php'"
         style="width: 100%; font-size: 16px;padding: 9px; height: 49px">

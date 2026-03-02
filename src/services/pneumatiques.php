@@ -5,41 +5,37 @@ require __DIR__ . '/../includes/header.php';
 ?>
 
 <!-- Page header -->
-<div class="row align-items-center mb-5">
-    <div class="col-md-2 text-center d-none d-md-block">
-        <i class="bi bi-circle service-detail-icon"></i>
-    </div>
-    <div class="col-md-10">
-        <span class="badge text-uppercase mb-2" style="background-color:#ff5d17;letter-spacing:.08em;">Toutes dimensions</span>
-        <h1 class="mb-1">Pneumatiques</h1>
-        <p class="lead text-muted">Vente, montage, équilibrage et entretien — un service complet pour vos pneus.</p>
+<div class="row align-items-center mb-4">
+    <div class="col-12">
+        <h1 class="mb-3" style="color: #ff5d17;font-weight: 600;">Pneumatiques</h1>
+        <h3>Vente, montage, équilibrage et entretien — un service complet pour vos pneus.</h3>
     </div>
 </div>
 
 <!-- Intro -->
 <div class="row mb-5">
-    <div class="col-md-8">
-        <p class="fs-5">Les pneus sont le seul point de contact entre votre véhicule et la route. Leur état impacte directement votre sécurité, votre confort et votre consommation de carburant.</p>
-        <p>Nous proposons un large choix de pneumatiques toutes marques, toutes dimensions, pour tous types de véhicules : citadines, berlines, SUV, utilitaires. Montage et équilibrage inclus.</p>
-        <a href="/rendez-vous.php" class="btn btn-primary btn-lg mt-2">
-            <i class="bi bi-calendar-check me-2"></i>Prendre rendez-vous
-        </a>
+    <div class="col-md-6">
+        <p class="fs-5 mb-4" style="line-height: 33px;margin-top:15px">Les pneus sont le seul point de contact entre votre véhicule et la route. Leur état impacte directement votre sécurité, votre confort et votre consommation de carburant.</p>
+        <p class="fs-5 mb-4" style="line-height: 33px;">Nous proposons un large choix de pneumatiques toutes marques, toutes dimensions, pour tous types de véhicules : citadines, berlines, SUV, utilitaires. Montage et équilibrage inclus.</p>
+        <button type="button" class="btn btn-green" id="btnRDV" onclick="window.location.href='/rendez-vous.php'"
+        style="width: 100%; font-size: 16px;padding: 9px; height: 49px">
+                                    <p style="padding-top:9px" id="trackLabel">
+                                    <i class="bi bi-calendar3 me-2" style="font-size: 22px;"></i>
+                                    Prendre rendez-vous</p>
+                                </button>
+
+        
     </div>
-    <div class="col-md-4 mt-4 mt-md-0">
-        <div class="card border-0 shadow-sm h-100">
-            <div class="card-body text-center d-flex flex-column justify-content-center p-4">
-                <i class="bi bi-shield-fill-check mb-3" style="font-size:2.5rem;color:#ff5d17;"></i>
-                <h5>Contrôle gratuit</h5>
-                <p class="text-muted small mb-3">Lors de votre passage, nous vérifions gratuitement la pression et l'usure de vos pneus.</p>
-                <a href="/rendez-vous.php" class="btn btn-outline-primary btn-sm">Prendre RDV</a>
-            </div>
-        </div>
+    <div class="col-md-6 mt-4 mt-md-0">
+        <img src="/assets/img/services/pneus5.jpg" alt="Entretien et vidange" class="w-100 rounded-3 shadow-sm" style="height:400px;object-fit:cover;object-position:center;"> 
+    
+       
     </div>
 </div>
 
 <div class="row mb-4">
     <div class="col-12">
-        <img src="/assets/img/services/pneumatiques.jpg" alt="Pneumatiques" class="w-100 rounded-3 shadow-sm" style="height:400px;object-fit:cover;object-position:center;">
+        <img src="/assets/img/services/pneus3.png" alt="Pneumatiques" class="w-100 rounded-3 shadow-sm" style="height:400px;object-fit:cover;object-position:center;">
     </div>
 </div>
 
@@ -150,12 +146,12 @@ require __DIR__ . '/../includes/header.php';
         <h2 class="mb-2">Vos pneus, notre priorité</h2>
         <p class="lead opacity-75 mb-4">Ne roulez pas sur des pneus usés. Prenez rendez-vous pour un contrôle gratuit ou un remplacement rapide — montage et équilibrage inclus.</p>
         <div class="d-flex flex-wrap justify-content-center gap-3">
-            <a href="/rendez-vous.php" class="btn btn-lg fw-semibold" style="background-color:#ff5d17;color:#fff;">
-                <i class="bi bi-calendar-plus me-2"></i>Prendre rendez-vous
-            </a>
-            <a href="/contact.php" class="btn btn-lg btn-outline-light fw-semibold">
-                <i class="bi bi-telephone me-2"></i>Nous appeler
-            </a>
+            <button type="button" class="btn btn-green" id="btnRDV" onclick="window.location.href='/rendez-vous.php'"
+        style="font-size: 16px;padding: 9px; height: 49px">
+                                    <p style="padding-top:9px" id="trackLabel">
+                                    <i class="bi bi-calendar3 me-2" style="font-size: 22px;"></i>
+                                    Prendre rendez-vous</p>
+                                </button>
         </div>
     </div>
 </div>
