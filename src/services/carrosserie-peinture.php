@@ -4,14 +4,6 @@ $page_title = 'Carrosserie / Peinture';
 require __DIR__ . '/../includes/header.php';
 ?>
 
-<nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="/">Accueil</a></li>
-        <li class="breadcrumb-item"><a href="/services/">Services</a></li>
-        <li class="breadcrumb-item active">Carrosserie / Peinture</li>
-    </ol>
-</nav>
-
 <!-- Page header -->
 <div class="row align-items-center mb-5">
     <div class="col-md-2 text-center d-none d-md-block">
@@ -150,12 +142,12 @@ require __DIR__ . '/../includes/header.php';
         <h2 class="mb-2">Redonnez à votre véhicule son éclat d'origine</h2>
         <p class="lead opacity-75 mb-4">Rayure, choc, sinistre ou simple entretien de la carrosserie — notre équipe s'occupe de tout avec précision et savoir-faire.</p>
         <div class="d-flex flex-wrap justify-content-center gap-3">
-            <a href="/rendez-vous.php" class="btn btn-lg fw-semibold" style="background-color:#ff5d17;color:#fff;">
-                <i class="bi bi-calendar-plus me-2"></i>Demander un devis gratuit
-            </a>
-            <a href="/contact.php" class="btn btn-lg btn-outline-light fw-semibold">
-                <i class="bi bi-telephone me-2"></i>Nous appeler
-            </a>
+         <button type="button" class="btn btn-green" id="btnRDV" onclick="window.location.href='/rendez-vous.php'"
+        style="font-size: 16px;padding: 9px; height: 49px">
+                                    <p style="padding-top:9px" id="trackLabel">
+                                    <i class="bi bi-calendar3 me-2" style="font-size: 22px;"></i>
+                                    Prendre rendez-vous</p>
+                                </button>
         </div>
     </div>
 </div>

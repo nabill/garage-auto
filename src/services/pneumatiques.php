@@ -4,14 +4,6 @@ $page_title = 'Pneumatiques';
 require __DIR__ . '/../includes/header.php';
 ?>
 
-<nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="/">Accueil</a></li>
-        <li class="breadcrumb-item"><a href="/services/">Services</a></li>
-        <li class="breadcrumb-item active">Pneumatiques</li>
-    </ol>
-</nav>
-
 <!-- Page header -->
 <div class="row align-items-center mb-5">
     <div class="col-md-2 text-center d-none d-md-block">

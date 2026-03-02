@@ -160,6 +160,47 @@ docker-compose up --build
 
 ---
 
+### Dépannage — Windows avec Docker Desktop + WSL
+
+#### Erreur : `Cannot connect to the Docker daemon at unix:///\wsl.localhost\Ubuntu\var\run\docker.sock`
+
+**Cause** : La variable d'environnement `DOCKER_HOST` pointe vers le socket WSL au lieu de Docker Desktop. Cela arrive quand Docker CLI est installé dans WSL et que la configuration par défaut est incorrecte.
+
+**Solution** : Spécifier explicitement le contexte Docker Desktop lors de chaque commande :
+
+```bash
+docker --context desktop-linux compose up -d --build
+```
+
+**Commandes utiles avec ce contexte** :
+
+```bash
+# Démarrer
+docker --context desktop-linux compose up -d --build
+
+# Voir les logs
+docker --context desktop-linux compose logs -f
+
+# Arrêter
+docker --context desktop-linux compose down
+
+# Arrêter + supprimer les données
+docker --context desktop-linux compose down -v
+
+# Lister les conteneurs
+docker --context desktop-linux ps
+```
+
+**Solution permanente** : Définir `desktop-linux` comme contexte par défaut :
+
+```bash
+docker context use desktop-linux
+```
+
+Après ça, les commandes normales (`docker-compose up --build`) fonctionneront sans le flag `--context`.
+
+---
+
 ## Installation sur serveur web (LAMP/WAMP/XAMPP/MAMP)
 
 ### Prérequis

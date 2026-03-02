@@ -190,12 +190,12 @@ require __DIR__ . '/../includes/header.php';
         <h2 class="mb-2">Vos freins méritent toute votre attention</h2>
         <p class="lead opacity-75 mb-4">N'attendez pas un signe alarmant. Faites vérifier votre système de freinage par nos techniciens et roulez en toute sécurité.</p>
         <div class="d-flex flex-wrap justify-content-center gap-3">
-            <a href="/rendez-vous.php" class="btn btn-lg fw-semibold" style="background-color:#ff5d17;color:#fff;">
-                <i class="bi bi-calendar-plus me-2"></i>Prendre rendez-vous
-            </a>
-            <a href="/contact.php" class="btn btn-lg btn-outline-light fw-semibold">
-                <i class="bi bi-telephone me-2"></i>Nous appeler
-            </a>
+           <button type="button" class="btn btn-green" id="btnRDV" onclick="window.location.href='/rendez-vous.php'"
+        style="font-size: 16px;padding: 9px; height: 49px">
+                                    <p style="padding-top:9px" id="trackLabel">
+                                    <i class="bi bi-calendar3 me-2" style="font-size: 22px;"></i>
+                                    Prendre rendez-vous</p>
+                                </button>
         </div>
     </div>
 </div>
