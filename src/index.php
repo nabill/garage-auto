@@ -67,10 +67,10 @@ $services = [
     ['bi-arrows-vertical',    '#ff5d17', 'Suspension / Amortisseurs', 'Diagnostic, remplacement amortisseurs, silent-blocs, géométrie.',                 '/services/suspension-amortisseurs.php'],
     ['bi-battery-charging',   '#111',    'Batterie',                  'Test, remplacement et recyclage — toutes batteries 12V, EFB, AGM.',               '/services/batterie.php'],
     ['bi-snow2',              '#ff5d17', 'Climatisation',             'Recharge R134a / R1234yf, détection de fuites, désinfection habitacle.',           '/services/climatisation.php'],
-    ['bi-circle',             '#111',    'Pneumatiques',              'Montage, équilibrage, permutation, géométrie — toutes marques.',                   '/services/pneumatiques.php'],
+    // ['bi-circle',             '#111',    'Pneumatiques',              'Montage, équilibrage, permutation, géométrie — toutes marques.',                   '/services/pneumatiques.php'],
     ['bi-cpu',                '#ff5d17', 'Diagnostic électronique',   'Lecture codes défauts OBD, remise à zéro, tests actuateurs.',                     '/services/diagnostic.php'],
-    ['bi-brush',              '#111',    'Carrosserie / Peinture',    'Débosselage, réparation chocs, peinture teintée à l\'identique.',                  '/services/carrosserie-peinture.php'],
-    ['bi-window',             '#ff5d17', 'Vitrage / Pare-brise',      'Réparation éclats, remplacement, recalibrage caméras ADAS.',                      '/services/vitrage.php'],
+    // ['bi-brush',              '#111',    'Carrosserie / Peinture',    'Débosselage, réparation chocs, peinture teintée à l\'identique.',                  '/services/carrosserie-peinture.php'],
+    // ['bi-window',             '#ff5d17', 'Vitrage / Pare-brise',      'Réparation éclats, remplacement, recalibrage caméras ADAS.',                      '/services/vitrage.php'],
     ['bi-clipboard-check',    '#111',    'Contrôle technique',        'Accompagnement avant contrôle, contre-visite, mise en conformité.',               '/services/controle-technique.php'],
 ];
 foreach ($services as $svc): ?>
