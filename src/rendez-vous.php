@@ -65,40 +65,42 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 require __DIR__ . '/includes/header.php';
 ?>
 
+<div class="row" style="justify-content:center">
+<div class="col col-12 col-lg-6">
 <div class="form-section">
-    <h1 class="mb-4">Prendre rendez-vous</h1>
-    <p class="text-muted">Remplissez le formulaire ci-dessous et nous vous recontacterons pour confirmer votre rendez-vous.</p>
-
+    <h1 class="mb-3" style="color: #ff5d17;font-weight: 700;">Prendre rendez-vous</h1>
+    <p class="fs-5 mb-4" style="line-height: 33px;margin-top:15px">Remplissez le formulaire ci-dessous et nous vous recontacterons pour confirmer votre rendez-vous.</p>
+    
     <?php foreach ($errors as $e): ?>
         <div class="alert alert-danger"><?= h($e) ?></div>
     <?php endforeach; ?>
 
-    <div class="card">
-        <div class="card-body">
+    <div class="card" style="padding-top:0px">
+        <div class="card-body" style="padding-top:0px">
             <form method="post">
                 <?= csrf_field() ?>
 
-                <h5 class="mb-3">Vos informations</h5>
+                <h3 class="mb-3">Vos informations</h3>
                 <div class="mb-3">
-                    <label for="client_nom" class="form-label">Nom complet *</label>
+                    <label for="client_nom" class="form-label" style="font-size: 15px;">Nom complet *</label>
                     <input type="text" class="form-control" id="client_nom" name="client_nom" value="<?= h($client_nom ?? '') ?>" required>
                 </div>
                 <div class="row">
                     <div class="col-md-6 mb-3">
-                        <label for="client_tel" class="form-label">Téléphone *</label>
+                        <label for="client_tel" class="form-label" style="font-size: 15px;">Téléphone *</label>
                         <input type="tel" class="form-control" id="client_tel" name="client_tel" value="<?= h($client_tel ?? '') ?>" required>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="client_email" class="form-label">Email *</label>
+                        <label for="client_email" class="form-label" style="font-size: 15px;">Email *</label>
                         <input type="email" class="form-control" id="client_email" name="client_email" value="<?= h($client_email ?? '') ?>" required>
                     </div>
                 </div>
 
                 <hr>
-                <h5 class="mb-3">Votre véhicule</h5>
+                <h3 class="mb-3">Votre véhicule</h3>
                 <div class="row">
                     <div class="col-md-6 mb-3">
-                        <label for="brand_id" class="form-label">Marque *</label>
+                        <label for="brand_id" class="form-label" style="font-size: 15px;">Marque *</label>
                         <select class="form-select" id="brand_id" name="brand_id" required>
                             <option value="">-- Choisir une marque --</option>
                             <?php foreach ($brands as $b): ?>
@@ -107,7 +109,7 @@ require __DIR__ . '/includes/header.php';
                         </select>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="model_id" class="form-label">Modèle *</label>
+                        <label for="model_id" class="form-label" style="font-size: 15px;">Modèle *</label>
                         <select class="form-select" id="model_id" name="model_id" required disabled>
                             <option value="">-- Choisir un modèle --</option>
                         </select>
@@ -115,20 +117,27 @@ require __DIR__ . '/includes/header.php';
                 </div>
 
                 <hr>
-                <h5 class="mb-3">Rendez-vous</h5>
+                <h3 class="mb-3">Rendez-vous</h3>
                 <div class="mb-3">
-                    <label for="date_rdv" class="form-label">Date souhaitée *</label>
+                    <label for="date_rdv" class="form-label" style="font-size: 15px;">Date souhaitée *</label>
                     <input type="date" class="form-control" id="date_rdv" name="date_rdv" value="<?= h($date_rdv ?? '') ?>" required>
                 </div>
                 <div class="mb-3">
-                    <label for="description" class="form-label">Description de l'intervention *</label>
+                    <label for="description" class="form-label" style="font-size: 15px;">Description de l'intervention *</label>
                     <textarea class="form-control" id="description" name="description" rows="4" required><?= h($description ?? '') ?></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-primary btn-lg w-100">Envoyer la demande</button>
+                <button type="submit" class="btn btn-green" id="btnRDV" style="width: auto; font-size: 16px;padding: 9px; height: 49px">
+                                    <p style="padding-top:9px" id="trackLabel">
+                                    Envoyer la demande</p>
+                                </button>
+
+                                
             </form>
         </div>
     </div>
+</div>
+</div>
 </div>
 
 <?php require __DIR__ . '/includes/footer.php'; ?>

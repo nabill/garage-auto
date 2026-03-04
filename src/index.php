@@ -49,7 +49,7 @@ require __DIR__ . '/includes/header.php';
 <div style="height:60px;"></div>
 
 <!-- ═══════════════════════════════════════════════════════ SERVICES -->
-<div class="row mb-2">
+<div class="row mb-2" style="font-family:'inter ui'">
     <div class="col-12 text-center">
         <h2 style="font-weight:800;letter-spacing:-.02em;">Nos prestations</h2>
         <p style="color:#888;font-size:16px;margin-bottom:36px;">Un garage complet pour tous vos besoins automobiles.</p>
@@ -58,28 +58,32 @@ require __DIR__ . '/includes/header.php';
 <div class="row g-3 mb-5">
 <?php
 $services = [
-    ['bi-droplet-half',       '#ff5d17', 'Entretien / Vidange',      'Vidange moteur, filtres, niveaux — conforme aux spécifications constructeur.',   '/services/entretien-vidange.php'],
-    ['bi-tools',              '#111',    'Révision Premium',          'Révision complète 80 points selon le carnet constructeur.',                        '/services/revision.php'],
-    ['bi-wrench-adjustable',  '#ff5d17', 'Mécanique générale',        'Moteur, boîte, freins, distribution — toutes réparations mécaniques.',            '/services/mecanique-generale.php'],
-    ['bi-record-circle',      '#111',    'Freins / Plaquettes',       'Remplacement plaquettes, disques, liquide de frein, contrôle ABS.',               '/services/freins.php'],
-    ['bi-arrow-repeat',       '#ff5d17', 'Courroie de distribution',  'Remplacement selon kilométrage — intervention critique à ne pas négliger.',        '/services/courroie-distribution.php'],
-    ['bi-disc',               '#111',    'Embrayage',                 'Remplacement kit embrayage complet, cylindre récepteur, volant moteur.',           '/services/embrayage.php'],
-    ['bi-arrows-vertical',    '#ff5d17', 'Suspension / Amortisseurs', 'Diagnostic, remplacement amortisseurs, silent-blocs, géométrie.',                 '/services/suspension-amortisseurs.php'],
-    ['bi-battery-charging',   '#111',    'Batterie',                  'Test, remplacement et recyclage — toutes batteries 12V, EFB, AGM.',               '/services/batterie.php'],
-    ['bi-snow2',              '#ff5d17', 'Climatisation',             'Recharge R134a / R1234yf, détection de fuites, désinfection habitacle.',           '/services/climatisation.php'],
+    ['<i class="bi bi-droplet-half" style="font-size:2.1rem;color:#ff5d17;margin-bottom:10px;display:block;"></i>',       '#ff5d17', 'Entretien / Vidange',      'Vidange moteur, filtres, niveaux — conforme aux spécifications constructeur.',   '/services/entretien-vidange.php'],
+    ['<i class="bi bi-tools" style="font-size:2.1rem;color:#ff5d17;margin-bottom:10px;display:block;"></i>',              '#ff5d17',    'Révision Premium',          'Révision complète 80 points selon le carnet constructeur.',                        '/services/revision.php'],
+    ['<i class="bi bi-wrench-adjustable" style="font-size:2.1rem;color:#ff5d17;margin-bottom:10px;display:block;"></i>',  '#ff5d17', 'Mécanique générale',        'Moteur, boîte, freins, distribution — toutes réparations mécaniques.',            '/services/mecanique-generale.php'],
+    ['<i class="bi bi-record-circle" style="font-size:2.1rem;color:#ff5d17;margin-bottom:10px;display:block;"></i>',      '#ff5d17',    'Freins / Plaquettes',       'Remplacement plaquettes, disques, liquide de frein, contrôle ABS.',               '/services/freins.php'],
+    ['<i class="bi bi-arrow-repeat" style="font-size:2.1rem;color:#ff5d17;margin-bottom:10px;display:block;"></i>',       '#ff5d17', 'Courroie de distribution',  'Remplacement selon kilométrage — intervention critique à ne pas négliger.',        '/services/courroie-distribution.php'],
+    ['<i class="bi bi-disc" style="font-size:2.1rem;color:#ff5d17;margin-bottom:10px;display:block;"></i>',               '#ff5d17',    'Embrayage',                 'Remplacement kit embrayage complet, cylindre récepteur, volant moteur.',           '/services/embrayage.php'],
+    ['<i class="bi bi-arrows-vertical" style="font-size:2.1rem;color:#ff5d17;margin-bottom:10px;display:block;"></i>',    '#ff5d17', 'Suspension / Amortisseurs', 'Diagnostic, remplacement amortisseurs, silent-blocs, géométrie.',                 '/services/suspension-amortisseurs.php'],
+    ['<svg style="    height: 41px;
+    width: 41px;
+    fill: #ff5d17;
+    margin-bottom: 5px;
+    margin-top: -5px;" fill="#000000" width="800px" height="800px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M 8 6 L 8 8 L 12 8 L 12 6 Z M 20 6 L 20 8 L 24 8 L 24 6 Z M 4 9 L 4 27 L 28 27 L 28 9 Z M 6 11 L 26 11 L 26 25 L 6 25 Z M 20 15 L 20 17 L 18 17 L 18 19 L 20 19 L 20 21 L 22 21 L 22 19 L 24 19 L 24 17 L 22 17 L 22 15 Z M 8 17 L 8 19 L 14 19 L 14 17 Z"/></svg>',   '#ff5d17',    'Batterie',                  'Test, remplacement et recyclage — toutes batteries 12V, EFB, AGM.',               '/services/batterie.php'],
+    ['<i class="bi bi-snow2" style="font-size:2.1rem;color:#ff5d17;margin-bottom:10px;display:block;"></i>',              '#ff5d17', 'Climatisation',             'Recharge R134a / R1234yf, détection de fuites, désinfection habitacle.',           '/services/climatisation.php'],
     // ['bi-circle',             '#111',    'Pneumatiques',              'Montage, équilibrage, permutation, géométrie — toutes marques.',                   '/services/pneumatiques.php'],
-    ['bi-cpu',                '#ff5d17', 'Diagnostic électronique',   'Lecture codes défauts OBD, remise à zéro, tests actuateurs.',                     '/services/diagnostic.php'],
+    ['<i class="bi bi-cpu" style="font-size:2.1rem;color:#ff5d17;margin-bottom:10px;display:block;"></i>',                '#ff5d17', 'Diagnostic électronique',   'Lecture codes défauts OBD, remise à zéro, tests actuateurs.',                     '/services/diagnostic.php'],
     // ['bi-brush',              '#111',    'Carrosserie / Peinture',    'Débosselage, réparation chocs, peinture teintée à l\'identique.',                  '/services/carrosserie-peinture.php'],
     // ['bi-window',             '#ff5d17', 'Vitrage / Pare-brise',      'Réparation éclats, remplacement, recalibrage caméras ADAS.',                      '/services/vitrage.php'],
-    ['bi-clipboard-check',    '#111',    'Contrôle technique',        'Accompagnement avant contrôle, contre-visite, mise en conformité.',               '/services/controle-technique.php'],
+    ['<i class="bi bi-clipboard-check" style="font-size:2.1rem;color:#ff5d17;margin-bottom:10px;display:block;"></i>',    '#ff5d17',    'Contrôle technique',        'Accompagnement avant contrôle, contre-visite, mise en conformité.',               '/services/controle-technique.php'],
 ];
 foreach ($services as $svc): ?>
-<div class="col-6 col-md-4 col-lg-3">
+<div class="col-6 col-md-4 col-lg-3" style="font-family:'inter ui'">
     <a href="<?= $svc[4] ?>" style="text-decoration:none;display:block;height:100%;">
         <div style="border:1px solid #eee;border-radius:10px;padding:22px 18px;height:100%;transition:box-shadow .15s,border-color .15s;background:#fff;" class="svc-card">
-            <i class="bi <?= $svc[0] ?>" style="font-size:1.6rem;color:<?= $svc[1] ?>;margin-bottom:10px;display:block;"></i>
+            <?= $svc[0] ?>
             <div style="font-weight:700;font-size:14px;color:#111;margin-bottom:5px;font-family:Montserrat-Variable,sans-serif;"><?= $svc[2] ?></div>
-            <div style="font-size:12.5px;color:#888;line-height:1.5;"><?= $svc[3] ?></div>
+            <div style="font-size:14px;color:#888;line-height:1.5;"><?= $svc[3] ?></div>
         </div>
     </a>
 </div>
@@ -135,7 +139,7 @@ foreach ($services as $svc): ?>
 </div>
 
 <!-- ═══════════════════════════════════════════════════════ NEWS -->
-<?php if (!empty($news)): ?>
+<!-- <?php if (!empty($news)): ?>
 <div class="row mb-2">
     <div class="col-12 d-flex justify-content-between align-items-baseline">
         <h2 style="font-weight:800;letter-spacing:-.02em;">Actualités</h2>
@@ -166,10 +170,10 @@ foreach ($services as $svc): ?>
     </div>
     <?php endforeach; ?>
 </div>
-<?php endif; ?>
+<?php endif; ?> -->
 
 <!-- ═══════════════════════════════════════════════════════ CONTACT STRIP -->
-<div style="background:#f7f7f7;margin-left:calc(-50vw + 50%);width:100vw;padding:40px 24px;margin-bottom:0;">
+<!-- <div style="background:#f7f7f7;margin-left:calc(-50vw + 50%);width:100vw;padding:40px 24px;margin-bottom:0;">
     <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px;text-align:center;">
         <div>
             <i class="bi bi-geo-alt-fill" style="font-size:1.4rem;color:#ff5d17;margin-bottom:8px;display:block;"></i>
@@ -192,7 +196,7 @@ foreach ($services as $svc): ?>
             <div style="font-size:13px;color:#888;">Lun – Ven : 8h – 18h<br>Samedi : 9h – 13h</div>
         </div>
     </div>
-</div>
+</div> -->
 
 <div style="height:1px;"></div>
 

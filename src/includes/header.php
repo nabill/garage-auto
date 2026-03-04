@@ -218,7 +218,7 @@
             </div>
             <div class="button-text-box"><div class="button-text">
               <div class="button-02-text">Prendre rendez-vous</div>
-              <div class="button-02-text" style="margin-top:-1px">Prendre rendez-vous</div>
+              <div class="button-02-text" style="margin-top:-1px; color:white">Prendre rendez-vous</div>
             </div></div>
             <div class="button-02-bg"></div>
             <div class="button-02-hover-bg"></div>
