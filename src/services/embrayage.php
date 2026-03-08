@@ -103,7 +103,7 @@ require __DIR__ . '/../includes/header.php';
                 ["bi-cpu",       "Butée d'embrayage",    "Actionne le mécanisme à chaque appui sur la pédale. Usure mécanique progressive."],
             ];
             foreach ($composants as [$icon, $nom, $desc]): ?>
-            <div class="col-4" style="font-family:'inter ui'">
+            <div class="col-12 col-md-6 col-lg-3" style="font-family:'inter ui'">
                 <div class="card border-0 shadow-sm text-center h-100">
                     <div class="card-body py-4">
                         <i class="bi <?= $icon ?> mb-2 d-block" style="font-size:2.5rem;color:#ff5d17;"></i>
@@ -116,15 +116,11 @@ require __DIR__ . '/../includes/header.php';
             
             <?php endforeach; ?>
 
-            <div class="col-4 card text-white h-100" style="background-color:#ff5d17;">
+            <div class="col-12 col-md-6 col-lg-3 card text-white h-100" style="background-color:#ff5d17;">
                 <div class="card-body text-center d-flex flex-column justify-content-center p-4" style="font-family: 'Inter UI';">
                 <i class="bi bi-award mb-3" style="font-size:5rem;"></i>
-                <h4 style="color:white;    font-size: 27px;
-    margin-top: 7px;">Notre engagement</h4>
-    <p class="fs-5 mb-4" style="line-height: 33px;color:white;    margin-bottom: 0px !important;
-    margin-top: 7px;">Kit complet</p>
-    <p class="fs-5 mb-4" style="line-height: 33px;color:white;    margin-bottom: 0px !important;">Pièces adaptées</p>
-    <p class="fs-5 mb-4" style="line-height: 33px;color:white;    margin-bottom: 0px !important;">Garantie pièces et la main-d'œuvre</p>
+    <p class="fs-5 mb-4" style="line-height: 33px;color:white;    margin-bottom: 0px !important;font-size: 19px !important;">Pièces adaptées</p>
+    <p class="fs-5 mb-4" style="line-height: 33px;color:white;    margin-bottom: 0px !important;font-size: 19px !important;">Garantie pièces et la main-d'œuvre</p>
            
             </div>
             </div>
