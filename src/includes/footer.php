@@ -5,7 +5,7 @@
 <?php
 $footer_hours = get_opening_hours($pdo);
 ?>
-<footer class="bg-dark text-light py-5 mt-5" style="background-color:#e1e1e1 !important">
+<footer class="bg-dark text-light py-5 mt-5" style="background-color:#f3f3f3 !important">
     <div class="container">
 
  <div class="container">
@@ -17,10 +17,10 @@ $footer_hours = get_opening_hours($pdo);
                     <tbody>
                     <?php foreach ($footer_hours as $fh): ?>
                         <tr>
-                            <td style="background-color:#e1e1e1;width:100px">
+                            <td style="background-color:#f3f3f3;width:100px">
                                 <p class="fs-5" style="font-weight: 600;font-size:14px !important;color:black;line-height: 19px;"><?= day_name($fh['day_of_week']) ?></p>
                                 </td>
-                            <td style="background-color:#e1e1e1">
+                            <td style="background-color:#f3f3f3">
                                 <?php if ($fh['open_time'] && $fh['close_time']): ?>
                                     <?= format_time($fh['open_time']) ?> – <?= format_time($fh['close_time']) ?>
                                 <?php else: ?>
@@ -33,24 +33,23 @@ $footer_hours = get_opening_hours($pdo);
                 </table>
          </div>
          <div class="col-12 col-lg-4">
-             <div><a class="link" href="/">Acceuil</a></div>
              <div><a class="link" href="/services/entretien-vidange.php">Entretien / Vidange</a></div>
+             <div><a class="link" href="/services/revision.php">Révision Premium</a></div>
              <div><a class="link" href="/services/mecanique-generale.php">Mécanique générale</a></div>
              <div><a class="link" href="/services/freins.php">Freins / Plaquettes</a></div>
              <div><a class="link" href="/services/courroie-distribution.php">Courroie de distribution</a></div>
+             <div><a class="link" href="/services/embrayage.php">Embrayage</a></div>
              <div><a class="link" href="/services/suspension-amortisseurs.php">Suspension / Amortisseurs</a></div>
              <div><a class="link" href="/services/batterie.php">Batteries</a></div>
-             <div><a class="link" href="/services/pneumatiques.php">Pneumatiques</a></div>
-             <div><a class="link" href="/services/suspension-amortisseurs.php">Suspension / Amortisseurs</a></div>
-             <div><a class="link" href="/services/embrayage.php">Embrayage</a></div>
              <div><a class="link" href="/services/climatisation.php">Climatisation</a></div>
-             <div><a class="link" href="/services/carrosserie-peinture.php">Carrosserie / Peinture</a></div>
-             <div><a class="link" href="/contact.php">Contact</a></div>
+             <div><a class="link" href="/services/diagnostic.php">Diagnostic électronique</a></div>
+             <div><a class="link" href="/services/controle-technique.php">Contrôle technique</a></div>
          </div>
          <div class="col-12 col-lg-4 mt-3">
             <p class="fs-5" style="font-size:16px !important;color:black;line-height: 19px;">3 Chemin des Arestieux</p>
             <p class="fs-5" style="font-size:16px !important;color:black;line-height: 19px;">33610 Cestas, France</p>
             <p class="fs-5" style="font-size:16px !important;color:black;line-height: 19px;">contact@mecanocestas.com</p>
+            <div style="margin-left: -6px;"><a class="link" href="/contact.php">Contact</a></div>
          </div>
      </div>
      <div class="space5"></div>

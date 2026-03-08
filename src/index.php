@@ -93,17 +93,22 @@ foreach ($services as $svc): ?>
 .svc-card:hover { box-shadow:0 8px 24px rgba(0,0,0,.1); border-color:#ff5d17 !important; }
 </style>
 
+<!-- ═══════════════════════════════════════════════════════ FULL WIDTH IMAGE -->
+<div style="margin-left:calc(-50vw + 50%);width:100vw;margin-bottom:0;">
+    <img src="/assets/img/6687.jpg" alt="Garage Mecano Auto" style="width:100%;height:auto;display:block;">
+</div>
+
 <!-- ═══════════════════════════════════════════════════════ WHY US -->
 <div style="background:#f7f7f7;margin-left:calc(-50vw + 50%);width:100vw;padding:60px 24px;margin-bottom:0;">
-    <div style="max-width:1200px;margin:0 auto;">
+    <div style="max-width:1200px;margin:0 auto;font-family:'inter ui'">
         <h2 style="text-align:center;font-weight:800;letter-spacing:-.02em;margin-bottom:8px;">Pourquoi nous choisir ?</h2>
         <p style="text-align:center;color:#888;font-size:16px;margin-bottom:44px;">Chez Mecano Auto, chaque véhicule est traité comme le nôtre.</p>
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:32px;">
             <?php foreach ([
                 ['bi-award-fill',        '#ff5d17', 'Expertise confirmée',    'Des techniciens qualifiés avec des années d\'expérience en atelier.'],
-                ['bi-clock-fill',        '#111',    'Délais respectés',       'Votre voiture prête à l\'heure promise, sans mauvaises surprises.'],
+                ['bi-clock-fill',        '#ff5d17',    'Délais respectés',       'Votre voiture prête à l\'heure promise, sans mauvaises surprises.'],
                 ['bi-shield-fill-check', '#ff5d17', 'Garantie travaux',       'Pièces et main d\'œuvre garantis sur toutes nos interventions.'],
-                ['bi-receipt',           '#111',    'Devis transparent',      'Tarifs clairs affichés avant chaque intervention, aucun extra caché.'],
+                ['bi-car-front-fill',    '#ff5d17',    'Toutes marques',         'Essence, diesel, hybride — nous intervenons sur toutes les marques sans exception.'],
             ] as $w): ?>
             <div style="text-align:center;padding:12px;">
                 <div style="width:58px;height:58px;border-radius:50%;background:<?= $w[1] ?>;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;">
@@ -132,9 +137,9 @@ foreach ($services as $svc): ?>
         <a href="/rendez-vous.php" style="display:inline-flex;align-items:center;gap:9px;background:#ff5d17;color:#fff;font-weight:700;font-size:16px;padding:14px 32px;border-radius:8px;text-decoration:none;">
             <i class="bi bi-calendar-plus"></i> Réserver maintenant
         </a>
-        <a href="tel:+33556000000" style="display:inline-flex;align-items:center;gap:9px;background:rgba(255,255,255,.08);color:#fff;font-weight:600;font-size:16px;padding:14px 32px;border-radius:8px;text-decoration:none;border:1px solid rgba(255,255,255,.15);">
+        <!-- <a href="tel:+33556000000" style="display:inline-flex;align-items:center;gap:9px;background:rgba(255,255,255,.08);color:#fff;font-weight:600;font-size:16px;padding:14px 32px;border-radius:8px;text-decoration:none;border:1px solid rgba(255,255,255,.15);">
             <i class="bi bi-telephone"></i> Nous appeler
-        </a>
+        </a> -->
     </div>
 </div>
 

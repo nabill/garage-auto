@@ -96,22 +96,20 @@
                   <nav class="nav-dropdown-list shadow-three mobile-shadow-hide _5 w-dropdown-list" 
                   id="w-dropdown-list-0" aria-labelledby="w-dropdown-toggle-0" 
                   style="width:260px;transform: translate3d(0px, 10%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 0;">
-                    <div class="nav-dropdown-box" style="    padding-left: 17px;
-    padding-top: 10px;padding-left:17px;
-    padding-bottom: 16px;">
+                    <div class="nav-dropdown-box" style="padding-top: 13px; padding-left: 24px; padding-bottom: 18px;">
                       <div class="nav-dropdown-menu-wrap">
                         <div class="nav-dropdown-menu">
-                          <a style="margin-bottom:2px;font-size: 15px;" href="/services/entretien-vidange.php" class="nav-dropdown-menu-link paragraph-large" tabindex="0">Entretien / Vidange</a>
-                          <a style="margin-bottom:2px;font-size: 15px;" href="/services/mecanique-generale.php" class="nav-dropdown-menu-link paragraph-large" tabindex="0">Mécanique générale</a>
-                          <a style="margin-bottom:2px;font-size: 15px;" href="/services/freins.php" class="nav-dropdown-menu-link paragraph-large" tabindex="0">Freins / Plaquettes</a>
-                          <a style="margin-bottom:2px;font-size: 15px;" href="/services/courroie-distribution.php" class="nav-dropdown-menu-link paragraph-large" tabindex="0">Courroie de distribution</a>
-                          <a style="margin-bottom:2px;font-size: 15px;" href="/services/suspension-amortisseurs.php" class="nav-dropdown-menu-link paragraph-large" tabindex="0">Suspension / Amortisseurs</a>
-                          <a style="margin-bottom:2px;font-size: 15px;" href="/services/batterie.php" class="nav-dropdown-menu-link paragraph-large" tabindex="0">Batteries</a>
-                          <a style="margin-bottom:2px;font-size: 15px;" href="/services/pneumatiques.php" class="nav-dropdown-menu-link paragraph-large" tabindex="0">Pneumatiques</a>
-                          <a style="margin-bottom:2px;font-size: 15px;" href="/services/suspension-amortisseurs.php" class="nav-dropdown-menu-link paragraph-large" tabindex="0">Suspension / Amortisseurs</a>
-                          <a style="margin-bottom:2px;font-size: 15px;" href="/services/embrayage.php" class="nav-dropdown-menu-link paragraph-large" tabindex="0">Embrayage</a>
-                          <a style="margin-bottom:2px;font-size: 15px;" href="/services/climatisation.php" class="nav-dropdown-menu-link paragraph-large" tabindex="0">Climatisation</a>
-                          <a style="margin-bottom:2px;font-size: 15px;" href="/services/carrosserie-peinture.php" class="nav-dropdown-menu-link paragraph-large" tabindex="0">Carrosserie / Peinture</a>
+                          <a style="margin-bottom:3px;font-size: 15px;font-weight: 500;font-family: 'Inter UI';" href="/services/entretien-vidange.php" class="nav-dropdown-menu-link paragraph-large" tabindex="0">Entretien / Vidange</a>
+                          <a style="margin-bottom:3px;font-size: 15px;font-weight: 500;font-family: 'Inter UI';" href="/services/revision.php" class="nav-dropdown-menu-link paragraph-large" tabindex="0">Révision Premium</a>
+                          <a style="margin-bottom:3px;font-size: 15px;font-weight: 500;font-family: 'Inter UI';" href="/services/mecanique-generale.php" class="nav-dropdown-menu-link paragraph-large" tabindex="0">Mécanique générale</a>
+                          <a style="margin-bottom:3px;font-size: 15px;font-weight: 500;font-family: 'Inter UI';" href="/services/freins.php" class="nav-dropdown-menu-link paragraph-large" tabindex="0">Freins / Plaquettes</a>
+                          <a style="margin-bottom:3px;font-size: 15px;font-weight: 500;font-family: 'Inter UI';" href="/services/courroie-distribution.php" class="nav-dropdown-menu-link paragraph-large" tabindex="0">Courroie de distribution</a>
+                          <a style="margin-bottom:3px;font-size: 15px;font-weight: 500;font-family: 'Inter UI';" href="/services/embrayage.php" class="nav-dropdown-menu-link paragraph-large" tabindex="0">Embrayage</a>
+                          <a style="margin-bottom:3px;font-size: 15px;font-weight: 500;font-family: 'Inter UI';" href="/services/suspension-amortisseurs.php" class="nav-dropdown-menu-link paragraph-large" tabindex="0">Suspension / Amortisseurs</a>
+                          <a style="margin-bottom:3px;font-size: 15px;font-weight: 500;font-family: 'Inter UI';" href="/services/batterie.php" class="nav-dropdown-menu-link paragraph-large" tabindex="0">Batteries</a>
+                          <a style="margin-bottom:3px;font-size: 15px;font-weight: 500;font-family: 'Inter UI';" href="/services/climatisation.php" class="nav-dropdown-menu-link paragraph-large" tabindex="0">Climatisation</a>
+                          <a style="margin-bottom:3px;font-size: 15px;font-weight: 500;font-family: 'Inter UI';" href="/services/diagnostic.php" class="nav-dropdown-menu-link paragraph-large" tabindex="0">Diagnostic électronique</a>
+                          <a style="margin-bottom:3px;font-size: 15px;font-weight: 500;font-family: 'Inter UI';" href="/services/controle-technique.php" class="nav-dropdown-menu-link paragraph-large" tabindex="0">Contrôle technique</a>
                         </div>
 
 <!-- 

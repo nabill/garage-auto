@@ -4,14 +4,10 @@ $page_title = 'Embrayage';
 require __DIR__ . '/../includes/header.php';
 ?>
 
-<div class="row align-items-center mb-5">
-    <div class="col-md-2 text-center d-none d-md-block">
-        <i class="bi bi-disc service-detail-icon"></i>
-    </div>
-    <div class="col-md-10">
-        <span class="badge text-uppercase mb-2" style="background-color:#ff5d17;letter-spacing:.08em;">Intervention spécialisée</span>
-        <h1 class="mb-1">Remplacement d'embrayage</h1>
-        <p class="lead text-muted">Retrouvez des passages de vitesse fluides et une transmission optimale avec un embrayage en parfait état.</p>
+<div class="row align-items-center mb-4">
+    <div class="col-12">
+        <h1 class="mb-3" style="color: #ff5d17;font-weight: 700;">Remplacement d'embrayage</h1>
+        <h3>Retrouvez des passages de vitesse fluides et une transmission optimale avec un embrayage en parfait état.</h3>
     </div>
 </div>
 
