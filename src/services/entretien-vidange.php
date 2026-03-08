@@ -7,7 +7,8 @@ require __DIR__ . '/../includes/header.php';
 <!-- Page header -->
 <div class="row align-items-center mb-4">
     <div class="col-12">
-        <h1 class="mb-3" style="color: #ff5d17;font-weight: 700;">Entretien / Vidange</h1>
+        <h1 class="mb-3" 
+        style="color: black; font-weight: 700; border-left: 9px solid #ff5d17; padding-left: 15px;">Entretien / Vidange</h1>
         <!-- <h2>Un entretien régulier est la meilleure protection pour la longévité et les performances de votre véhicule.</h2> -->
         <h3>Un entretien régulier est la meilleure protection pour la longévité et les performances de votre véhicule.</h3>
         <!-- <h4>Un entretien régulier est la meilleure protection pour la longévité et les performances de votre véhicule.</h4>
