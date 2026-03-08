@@ -241,7 +241,7 @@
         </div>
     </div>
     <div class="mobile-menu">
-        <div style="min-height: Calc(100vh - 72px);">
+        <div>
             <a class="btn" style="border-left-width: 0px; border-right-width: 0px; text-align: start;border-color:#dddddd;font-size:17px;" href="/">Accueil</a>
             <a class="btn" style="border-left-width: 0px; border-right-width: 0px; text-align: start;border-color:#dddddd;font-size:17px;font-weight:600;" href="/services/">Services</a>
             <a class="btn" style="border-left-width: 0px; border-right-width: 0px; text-align: start;border-color:#dddddd;font-size:15px;padding-left:28px;" href="/services/entretien-vidange.php">Entretien / Vidange</a>

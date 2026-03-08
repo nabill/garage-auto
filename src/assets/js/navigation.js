@@ -4,4 +4,5 @@ const hamburger = document.querySelector('.hamburger');
     hamburger.addEventListener('click', () => {
       hamburger.classList.toggle('active');
       mobileMenu.classList.toggle('active');
+      document.body.classList.toggle('mobile-menu-active');
     });
