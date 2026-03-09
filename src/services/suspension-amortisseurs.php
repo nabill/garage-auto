@@ -6,7 +6,8 @@ require __DIR__ . '/../includes/header.php';
 
 <div class="row align-items-center mb-4">
     <div class="col-12">
-        <h1 class="mb-3" style="color: #ff5d17;font-weight: 700;">Suspension / Amortisseurs</h1>
+        <h1 class="mb-3" 
+        style="color: black; font-weight: 700; border-left: 9px solid #ff5d17; padding-left: 15px;">Suspension / Amortisseurs</h1>
         <h3>Un système de suspension en bon état, c'est confort, sécurité et maîtrise de votre véhicule.</h3>
     </div>
 </div>

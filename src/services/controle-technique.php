@@ -4,59 +4,45 @@ $page_title = 'Préparation au contrôle technique';
 require __DIR__ . '/../includes/header.php';
 ?>
 
-<nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="/">Accueil</a></li>
-        <li class="breadcrumb-item"><a href="/services/">Services</a></li>
-        <li class="breadcrumb-item active">Contrôle technique</li>
-    </ol>
-</nav>
-
-<div class="row align-items-center mb-5">
-    <div class="col-md-2 text-center d-none d-md-block">
-        <i class="bi bi-patch-check service-detail-icon"></i>
-    </div>
-    <div class="col-md-10">
-        <span class="badge text-uppercase mb-2" style="background-color:#ff5d17;letter-spacing:.08em;">Obligatoire tous les 2 ans</span>
-        <h1 class="mb-1">Préparation au contrôle technique</h1>
-        <p class="lead text-muted">Passez votre contrôle technique sans mauvaise surprise grâce à notre pré-visite complète.</p>
+<div class="row align-items-center mb-4">
+    <div class="col-12">
+        <h1 class="mb-3" 
+        style="color: black; font-weight: 700; border-left: 9px solid #ff5d17; padding-left: 15px;">Préparation au contrôle technique</h1>
+        <h3>Passez votre contrôle technique sans mauvaise surprise grâce à notre pré-visite complète.</h3>
     </div>
 </div>
+
 
 <div class="row mb-5">
-    <div class="col-md-8">
-        <p class="fs-5">Le contrôle technique est obligatoire en France pour tous les véhicules de plus de 4 ans, renouvelable tous les 2 ans. Un refus ou une contre-visite entraîne des frais supplémentaires et une immobilisation du véhicule.</p>
-        <p>Notre pré-visite de contrôle technique vous permet d'identifier et de corriger les défauts avant de vous présenter au centre agréé — pour passer du premier coup.</p>
-        <a href="/rendez-vous.php" class="btn btn-primary btn-lg mt-2">
-            <i class="bi bi-calendar-check me-2"></i>Prendre rendez-vous pour une pré-visite
-        </a>
+    <div class="col-md-6">
+        <p class="fs-5" style="margin-bottom:30px">
+    Le contrôle technique est obligatoire en France pour tous les véhicules de plus de 4 ans, renouvelable tous les 2 ans. Un refus ou une contre-visite entraîne des frais supplémentaires et une immobilisation du véhicule.
+</p>
+        <p class="fs-5">
+            Notre pré-visite de contrôle technique vous permet d'identifier et de corriger les défauts avant de vous présenter au centre agréé — pour passer du premier coup.
+        </p>
+         <button type="button" class="btn btn-green" id="btnRDV" onclick="window.location.href='/rendez-vous.php'"
+        style="margin-top: 15px;font-size: 16px;padding: 9px; height: 49px">
+                                    <p style="padding-top:9px" id="trackLabel">
+                                    <i class="bi bi-calendar3 me-2" style="font-size: 22px;"></i>
+                                    Prendre rendez-vous</p>
+                                </button>
     </div>
-    <div class="col-md-4 mt-4 mt-md-0">
-        <div class="card border-0 shadow-sm h-100">
-            <div class="card-body text-center d-flex flex-column justify-content-center p-4">
-                <i class="bi bi-check2-circle mb-3" style="font-size:2.5rem;color:#ff5d17;"></i>
-                <h5>Pré-visite complète</h5>
-                <p class="text-muted small mb-3">Nous contrôlons les mêmes points que le centre de contrôle technique pour éviter toute mauvaise surprise.</p>
-                <a href="/rendez-vous.php" class="btn btn-outline-primary btn-sm">Prendre RDV</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="row mb-4">
-    <div class="col-12">
-        <img src="/assets/img/services/controle-technique.jpg" alt="Contrôle technique" class="w-100 rounded-3 shadow-sm" style="height:400px;object-fit:cover;object-position:center;">
+    <div class="col-md-6 mt-4 mt-md-0">
+                <img src="/assets/img/services/empty.png" alt="Changement de batterie" class="w-100 rounded-3 shadow-sm" style="height:400px;object-fit:cover;object-position:center;">
     </div>
 </div>
 
 <hr class="my-5">
 
+
+
 <div class="row mb-5">
     <div class="col-md-6">
-        <h2 class="mb-4"><i class="bi bi-list-check me-2" style="color:#ff5d17;"></i>Ce que nous contrôlons</h2>
+        <h2 class="mb-4"><i class="bi bi-list-check me-2" style="color:#ff5d17;margin-right: 15px !important"></i>Ce que nous contrôlons</h2>
         <?php
         $points = [
-            ["bi-headlights",         "Éclairage",        "Phares, feux arrière, stop, clignotants, feux de recul et de brouillard"],
+            ["bi-lightbulb",         "Éclairage",        "Phares, feux arrière, stop, clignotants, feux de recul et de brouillard"],
             ["bi-slash-circle",       "Freinage",          "Efficacité des freins avant et arrière, frein à main, liquide de frein"],
             ["bi-eye",                "Visibilité",        "Pare-brise, rétroviseurs, essuie-glaces, lave-glace"],
             ["bi-circle",             "Pneumatiques",      "Usure, pression, état des flancs et de la bande de roulement"],
@@ -67,17 +53,18 @@ require __DIR__ . '/../includes/header.php';
         ];
         foreach ($points as [$icon, $titre, $desc]): ?>
         <div class="d-flex align-items-start gap-3 mb-3">
-            <i class="bi <?= $icon ?> flex-shrink-0 mt-1" style="font-size:1.3rem;color:#ff5d17;"></i>
+            <i class="bi <?= $icon ?> flex-shrink-0 mt-1" style="font-size:1.7rem;color:#ff5d17;"></i>
             <div>
                 <p class="mb-0 fw-semibold"><?= $titre ?></p>
-                <p class="mb-0 text-muted small"><?= $desc ?></p>
+                <p class="mb-0 text-muted small" style="font-size:17px;    margin-bottom: 5px !important;"><?= $desc ?></p>
             </div>
         </div>
         <?php endforeach; ?>
     </div>
     <div class="col-md-6 mt-4 mt-md-0">
-        <h2 class="mb-4"><i class="bi bi-exclamation-triangle me-2" style="color:#ff5d17;"></i>Les défauts les plus fréquents</h2>
-        <ul class="list-group list-group-flush mb-3">
+        <h2 class="mb-4"><i class="bi bi-exclamation-triangle me-2" style="color:#ff5d17;margin-right: 15px !important"></i>Les défauts les plus fréquents</h2>
+        <ul class="list-group list-group-flush mb-3" style="font-family: 'Inter UI';
+    font-size: 19px; line-height: 25px;">
             <li class="list-group-item ps-0"><i class="bi bi-x-circle-fill text-danger me-2"></i>Ampoule ou feu défaillant</li>
             <li class="list-group-item ps-0"><i class="bi bi-x-circle-fill text-danger me-2"></i>Pneus usés ou sous-gonflés</li>
             <li class="list-group-item ps-0"><i class="bi bi-x-circle-fill text-danger me-2"></i>Freins insuffisants ou déséquilibrés</li>
@@ -86,10 +73,11 @@ require __DIR__ . '/../includes/header.php';
             <li class="list-group-item ps-0"><i class="bi bi-x-circle-fill text-danger me-2"></i>Fuite d'huile ou de liquide de frein</li>
             <li class="list-group-item ps-0"><i class="bi bi-x-circle-fill text-danger me-2"></i>Émissions polluantes hors norme</li>
         </ul>
-        <div class="card border-0 bg-light">
-            <div class="card-body py-3 d-flex align-items-center gap-3">
-                <i class="bi bi-lightbulb flex-shrink-0" style="color:#ff5d17;font-size:1.5rem;"></i>
-                <p class="mb-0 small text-muted">Nous corrigeons les défauts constatés avant votre passage au centre de contrôle, avec votre accord.</p>
+
+        <div class="d-flex" style="background-color:#f4f4f4;padding: 20px;border-radius: 15px;padding-top: 25px;margin-bottom:20px">
+            <i class="bi bi-lightbulb flex-shrink-0" style="font-size: 3.0rem;color:#ff5d17;margin-right: 30px;margin-top: 2px;"></i>
+            <div>
+                <p class="fs-5 mb-4" style="line-height: 30px;font-weight: 400;margin-bottom:10px !important">Nous corrigeons les défauts constatés avant votre passage au centre de contrôle, avec votre accord.</p>
             </div>
         </div>
     </div>
@@ -99,7 +87,7 @@ require __DIR__ . '/../includes/header.php';
 
 <div class="row mb-5">
     <div class="col-12 mb-3">
-        <h2><i class="bi bi-gear me-2" style="color:#ff5d17;"></i>Comment ça se passe ?</h2>
+        <h2><i class="bi bi-gear me-2" style="color:#ff5d17;margin-right:15px !important"></i>Comment ça se passe?</h2>
     </div>
     <?php
     $etapes = [
@@ -117,8 +105,8 @@ require __DIR__ . '/../includes/header.php';
                     <?= $num ?>
                 </div>
                 <div>
-                    <h6 class="mb-1 fw-semibold"><?= $titre ?></h6>
-                    <p class="mb-0 text-muted small"><?= $desc ?></p>
+                    <h6 class="mb-1 fw-semibold" style="font-size:17px"><?= $titre ?></h6>
+                    <p class="mb-0 text-muted small" style="font-size:15px"><?= $desc ?></p>
                 </div>
             </div>
         </div>
@@ -132,12 +120,12 @@ require __DIR__ . '/../includes/header.php';
         <h2 class="mb-2">Passez votre contrôle technique du premier coup</h2>
         <p class="lead opacity-75 mb-4">Anticipez votre contrôle technique avec une pré-visite chez nous. Nous identifions et corrigeons les défauts avant que le centre agréé ne les signale.</p>
         <div class="d-flex flex-wrap justify-content-center gap-3">
-            <a href="/rendez-vous.php" class="btn btn-lg fw-semibold" style="background-color:#ff5d17;color:#fff;">
-                <i class="bi bi-calendar-plus me-2"></i>Prendre rendez-vous
-            </a>
-            <a href="/contact.php" class="btn btn-lg btn-outline-light fw-semibold">
-                <i class="bi bi-telephone me-2"></i>Nous appeler
-            </a>
+            <button type="button" class="btn btn-green" id="btnRDV" onclick="window.location.href='/rendez-vous.php'"
+        style="font-size: 16px;padding: 9px; height: 49px">
+                                    <p style="padding-top:9px" id="trackLabel">
+                                    <i class="bi bi-calendar3 me-2" style="font-size: 22px;"></i>
+                                    Prendre rendez-vous</p>
+                                </button>
         </div>
     </div>
 </div>

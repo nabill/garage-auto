@@ -7,7 +7,8 @@ require __DIR__ . '/../includes/header.php';
 <!-- Page header -->
 <div class="row align-items-center mb-4">
     <div class="col-12">
-        <h1 class="mb-3" style="color: #ff5d17;font-weight: 600;">Mécanique générale</h1>
+        <h1 class="mb-3" 
+        style="color: black; font-weight: 700; border-left: 9px solid #ff5d17; padding-left: 15px;">Mécanique générale</h1>
         <h3>Réparation, entretien et remise en état de tous les organes mécaniques de votre véhicule.</h3>
     </div>
 </div>

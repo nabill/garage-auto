@@ -6,7 +6,8 @@ require __DIR__ . '/../includes/header.php';
 
 <div class="row align-items-center mb-4">
     <div class="col-12">
-        <h1 class="mb-3" style="color: #ff5d17;font-weight: 700;">Remplacement d'embrayage</h1>
+        <h1 class="mb-3" 
+        style="color: black; font-weight: 700; border-left: 9px solid #ff5d17; padding-left: 15px;">Remplacement d'embrayage</h1>
         <h3>Retrouvez des passages de vitesse fluides et une transmission optimale avec un embrayage en parfait état.</h3>
     </div>
 </div>
