@@ -6,14 +6,14 @@
     <title><?= h($page_title ?? 'Garage Auto') ?> — Garage Auto</title>
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/css/bootstrap.min.css?v=<?= APP_VERSION ?>" rel="stylesheet">
     <!-- <link href="/assets/css/style.css" rel="stylesheet"> -->
-     <link rel="stylesheet" href="/assets/fonts/Montserrat/css/montserrat.css">
-<link rel="stylesheet" href="/assets/fonts/Hind/css/hind.css">
-<link rel="stylesheet" href="/assets/fonts/JetBrainsMono/css/jet-brains-mono.css">
-<link rel="stylesheet" href="/assets/fonts/Inter/css/inter.css">
-    <link href="/assets/css/webflow.css" rel="stylesheet">
-    <link href="/assets/css/theme.css" rel="stylesheet">
+     <link rel="stylesheet" href="/assets/fonts/Montserrat/css/montserrat.css?v=<?= APP_VERSION ?>">
+<link rel="stylesheet" href="/assets/fonts/Hind/css/hind.css?v=<?= APP_VERSION ?>">
+<link rel="stylesheet" href="/assets/fonts/JetBrainsMono/css/jet-brains-mono.css?v=<?= APP_VERSION ?>">
+<link rel="stylesheet" href="/assets/fonts/Inter/css/inter.css?v=<?= APP_VERSION ?>">
+    <link href="/assets/css/webflow.css?v=<?= APP_VERSION ?>" rel="stylesheet">
+    <link href="/assets/css/theme.css?v=<?= APP_VERSION ?>" rel="stylesheet">
       <script>!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
  <style>
     /* ── Shared Docs Styles (included on every docs page) ── */
