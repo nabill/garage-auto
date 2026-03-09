@@ -2,6 +2,7 @@
 require_once __DIR__ . '/config/init.php';
 
 $page_title = 'Prendre rendez-vous';
+$body_bg = '#f3f3f3';
 $brands = $pdo->query('SELECT * FROM car_brands ORDER BY nom')->fetchAll();
 $errors = [];
 
@@ -68,7 +69,8 @@ require __DIR__ . '/includes/header.php';
 <div class="row" style="justify-content:center">
 <div class="col col-12 col-lg-6">
 <div class="form-section">
-    <h1 class="mb-3" style="color: #ff5d17;font-weight: 700;">Prendre rendez-vous</h1>
+    <h1 class="mb-3" 
+    style="color: black; font-weight: 700; border-left: 9px solid #ff5d17; padding-left: 15px;">Prendre rendez-vous</h1>
     <p class="fs-5 mb-4" style="line-height: 33px;margin-top:15px">Remplissez le formulaire ci-dessous et nous vous recontacterons pour confirmer votre rendez-vous.</p>
     
     <?php foreach ($errors as $e): ?>

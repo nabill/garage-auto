@@ -42,7 +42,8 @@
     .docs-file-tree .accent { color: var(--orange); }
   </style>
 </head>
-<body>
+<body<?= isset($body_bg) ? ' style="background-color:' . h($body_bg) . ';"' : '' ?>>
+
 <nav>
     <div class="nav-container">
         <div class="nav-content">

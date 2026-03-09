@@ -14,14 +14,11 @@ require __DIR__ . '/includes/header.php';
                 Votre véhicule entre de <span style="color:#ff5d17;">bonnes mains.</span>
             </h1>
             <p style="color:rgba(255,255,255,.65);font-size:19px;line-height:1.6;margin-bottom:36px;max-width:520px;">
-                Mécanique, entretien, carrosserie — diagnostics rapides, devis gratuit, prise en charge immédiate à Cestas.
+                Mécanique, entretien, diagnostics rapides, prise en charge immédiate à Mecano Auto Cestas.
             </p>
             <div style="display:flex;flex-wrap:wrap;gap:14px;">
                 <a href="/rendez-vous.php" style="display:inline-flex;align-items:center;gap:9px;background:#ff5d17;color:#fff;font-weight:700;font-size:16px;padding:14px 28px;border-radius:8px;text-decoration:none;transition:background .15s;">
                     <i class="bi bi-calendar-plus"></i> Prendre rendez-vous
-                </a>
-                <a href="/services/" style="display:inline-flex;align-items:center;gap:9px;background:rgba(255,255,255,.1);color:#fff;font-weight:600;font-size:16px;padding:14px 28px;border-radius:8px;text-decoration:none;border:1px solid rgba(255,255,255,.2);transition:background .15s;">
-                    <i class="bi bi-grid"></i> Nos services
                 </a>
             </div>
         </div>

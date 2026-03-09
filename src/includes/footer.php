@@ -11,8 +11,10 @@ $footer_hours = get_opening_hours($pdo);
  <div class="container">
      <div class="row">
          <div class="col-12 col-lg-4">
-             <img onclick="window.open('/');" style="max-width: 161px;cursor:pointer" src="/assets/img/logoV5.png" alt="">
-             <h5>Horaires d'ouverture</h5>
+             <img onclick="window.open('/');" 
+             style="max-width: 161px;cursor:pointer; margin-bottom:25px" src="/assets/img/logoV5.png" alt="">
+
+        
                 <table class="table table-sm mb-5">
                     <tbody>
                     <?php foreach ($footer_hours as $fh): ?>

@@ -2,6 +2,7 @@
 require_once __DIR__ . '/config/init.php';
 
 $page_title = 'Contact';
+$body_bg = '#f3f3f3';
 $hours = get_opening_hours($pdo);
 $errors = [];
 $success = false;
@@ -39,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 require __DIR__ . '/includes/header.php';
 ?>
 
-<h1 class="mb-4" style="color: #ff5d17;font-weight: 700;">Contactez-nous</h1>
+<h1 class="mb-4" style="color: black; font-weight: 700; border-left: 9px solid #ff5d17; padding-left: 15px;">Contactez-nous</h1>
 
 <div class="row">
     <div class="col-md-6 mb-4">
