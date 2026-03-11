@@ -25,16 +25,12 @@ require __DIR__ . '/../includes/header.php';
                                 </button>
     </div>
     <div class="col-md-6 mt-4 mt-md-0">
-        <img src="/assets/img/services/premium2.jpg" alt="Entretien et vidange" class="w-100 rounded-3 shadow-sm" style="height:400px;object-fit:cover;object-position:center;"> 
+        <img src="/assets/img/services/revision1.jpg"   class="w-100 rounded-3 shadow-sm" style="height:400px;object-fit:cover;object-position:center;"> 
     </div>
 </div>
 <!-- ##### -->
  
-
-<div style="margin-left:calc(-50vw + 50%);width:100vw;margin-bottom:30px;">
-    <img src="/assets/img/services/premium1.jpg" alt="Garage Mecano Auto" style="width:100%;height:auto;display:block;">
-</div>
-
+ 
 <div class="row mb-5">
     <div class="col-md-6">
         <h2 class="mb-4"><i class="bi bi-question-circle me-2" style="color:#ff5d17;    margin-right: 15px !important;

@@ -115,7 +115,7 @@ require __DIR__ . '/includes/header.php';
                         <label for="message" class="form-label" style="font-size: 15px;">Message *</label>
                         <textarea class="form-control" id="message" name="message" rows="5" required><?= h($message ?? '') ?></textarea>
                     </div>
-                    <button type="submit" class="btn btn-green" id="btnRDV" onclick="window.location.href='/rendez-vous.php'" 
+                    <button type="submit" class="btn btn-green" 
                     style="width: auto; font-size: 16px;padding: 9px; height: 49px">
                                     <p style="padding-top:9px" id="trackLabel">
                                     Envoyer</p>

@@ -65,7 +65,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <span></span>
                     <span></span>
                 </button>
-                <div class="logo"><img src="/assets/img/Logov4.png" alt="" style="height: 35px;cursor:pointer" onclick="window.open('/');"></div>
+                <div class="logo"><img src="/assets/img/logo.png" alt="" style="height: 35px;cursor:pointer" onclick="window.open('/');"></div>
             </div>
             <div class="menu">
                 

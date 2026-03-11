@@ -92,7 +92,7 @@ foreach ($services as $svc): ?>
 
 <!-- ═══════════════════════════════════════════════════════ FULL WIDTH IMAGE -->
 <div style="margin-left:calc(-50vw + 50%);width:100vw;margin-bottom:0;">
-    <img src="/assets/img/6687.jpg" alt="Garage Mecano Auto" style="width:100%;height:auto;display:block;">
+    <img src="/assets/img/garage.jpg" alt="Garage Mecano Auto" style="width:100%;height:auto;display:block;">
 </div>
 
 <!-- ═══════════════════════════════════════════════════════ WHY US -->

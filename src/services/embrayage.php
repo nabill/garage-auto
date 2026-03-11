@@ -25,7 +25,7 @@ require __DIR__ . '/../includes/header.php';
                                 </button>
     </div>
     <div class="col-md-6 mt-4 mt-md-0">
-                <img src="/assets/img/services/empty.png" alt="Changement de batterie" class="w-100 rounded-3 shadow-sm" style="height:400px;object-fit:cover;object-position:center;">
+                <img src="/assets/img/services/embrayage.jpg" alt="Changement de batterie" class="w-100 rounded-3 shadow-sm" style="height:400px;object-fit:cover;object-position:center;">
 
     </div>
 </div>

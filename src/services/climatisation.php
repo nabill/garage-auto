@@ -29,7 +29,7 @@ require __DIR__ . '/../includes/header.php';
                                 </button>
     </div>
     <div class="col-md-6 mt-4 mt-md-0">
-                <img src="/assets/img/services/empty.png" alt="Changement de batterie" class="w-100 rounded-3 shadow-sm" style="height:400px;object-fit:cover;object-position:center;">
+                <img src="/assets/img/services/climatisation.jpg" alt="Changement de batterie" class="w-100 rounded-3 shadow-sm" style="height:400px;object-fit:cover;object-position:center;">
     </div>
 </div>
 
@@ -92,10 +92,12 @@ require __DIR__ . '/../includes/header.php';
     </div>
 </div>
 
-<hr class="my-5">
+<div style="margin-left:calc(-50vw + 50%);width:100vw;margin-bottom:0;">
+    <img src="/assets/img/services/climatisation3.jpg" style="width:100%;height:auto;display:block;">
+</div>
 
 <!-- Nos prestations -->
-<div class="row mb-5">
+<div class="row mb-5 mt-4">
     <div class="col-12 mb-3">
         <h2><i class="bi bi-list-check me-2" style="color:#ff5d17;margin-right:15px !important"></i>Nos prestations</h2>
     </div>

@@ -26,7 +26,7 @@ require __DIR__ . '/../includes/header.php';
                                 </button>
     </div>
     <div class="col-md-6 mt-4 mt-md-0">
-                <img src="/assets/img/services/freins1.png" alt="Changement de batterie" class="w-100 rounded-3 shadow-sm" style="height:400px;object-fit:cover;object-position:center;">
+                <img src="/assets/img/services/freins1.jpg" alt="Changement de batterie" class="w-100 rounded-3 shadow-sm" style="height:400px;object-fit:cover;object-position:center;">
 
     </div>
 </div>
@@ -93,7 +93,7 @@ require __DIR__ . '/../includes/header.php';
 </div>
 
 <div style="margin-left:calc(-50vw + 50%);width:100vw;margin-bottom:30px;">
-    <img src="/assets/img/services/freins2.png" alt="Garage Mecano Auto" style="width:100%;height:auto;display:block;">
+    <img src="/assets/img/services/freins2.jpg" alt="Garage Mecano Auto" style="width:100%;height:auto;display:block;">
 </div>
 
 

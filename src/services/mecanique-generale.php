@@ -26,7 +26,7 @@ require __DIR__ . '/../includes/header.php';
                                 </button>
     </div>
     <div class="col-md-6 mt-4 mt-md-0">
-        <img src="/assets/img/services/mecanique-generale.png" alt="Entretien et vidange" class="w-100 rounded-3 shadow-sm" style="height:400px;object-fit:cover;object-position:center;"> 
+        <img src="/assets/img/services/mecanique1.jpg" class="w-100 rounded-3 shadow-sm" style="height:400px;object-fit:cover;object-position:center;"> 
     </div>
 </div>
 <!-- ##### -->
@@ -38,8 +38,7 @@ require __DIR__ . '/../includes/header.php';
     <div class="col-12">
         <h2>Nos prestations</h2>
         <p class="fs-5 mb-4" style="line-height: 33px;">Du moteur à la suspension, nous maîtrisons l'ensemble de la mécanique automobile.</p>
-        <img src="/assets/img/services/macanique-generale-2.png" alt="Freins et plaquettes" class="w-100 rounded-3 shadow-sm" style="height:400px;object-fit:cover;object-position:center;">
-    </div>
+        </div>
 </div>
 
 <!-- Nos prestations -->
@@ -71,10 +70,12 @@ require __DIR__ . '/../includes/header.php';
     <?php endforeach; ?>
 </div>
 
-<hr class="my-5">
+<div style="margin-left:calc(-50vw + 50%);width:100vw;margin-bottom:0;">
+    <img src="/assets/img/services/mecanique2.jpg" alt="Garage Mecano Auto" style="width:100%;height:auto;display:block;">
+</div>
 
 <!-- Signes d'alerte + Notre méthode -->
-<div class="row mb-5">
+<div class="row mb-5 mt-4">
     <div class="col-md-6 mb-4 mb-md-0" style="font-size:17px">
         <h2 class="mb-4"><i class="bi bi-exclamation-triangle me-2" style="color:#ff5d17;"></i>Signes qui doivent alerter</h2>
         <p class="fs-5 mb-4" style="line-height: 33px;">Consultez-nous dès que vous remarquez :</p>

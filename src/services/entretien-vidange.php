@@ -30,13 +30,13 @@ require __DIR__ . '/../includes/header.php';
                                 </button>
     </div>
     <div class="col-md-6 mt-4 mt-md-0">
-        <img src="/assets/img/services/vidange-huile-1.png" alt="Entretien et vidange" class="w-100 rounded-3 shadow-sm" style="height:400px;object-fit:cover;object-position:center;"> 
+        <img src="/assets/img/services/vidange-huile-1.jpg" alt="Entretien et vidange" class="w-100 rounded-3 shadow-sm" style="height:400px;object-fit:cover;object-position:center;"> 
     </div>
 </div>
 <!-- ##### -->
  <div class="row mb-5 mt-5" style="margin-top:60px !important">
     <div class="col-md-6 mt-4 mt-md-0 mb-5">
-        <img src="/assets/img/services/vidange-huile-2.png" alt="Entretien et vidange" class="w-100 rounded-3 shadow-sm" style="height:400px;object-fit:cover;object-position:center;"> 
+        <img src="/assets/img/services/vidange-huile-2.jpg" alt="Entretien et vidange" class="w-100 rounded-3 shadow-sm" style="height:400px;object-fit:cover;object-position:center;"> 
     </div>
     <div class="col-md-6">
         <div class="d-flex">

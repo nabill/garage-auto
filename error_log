@@ -1,0 +1,83 @@
+[09-Mar-2026 03:59:33 UTC] PHP Warning:  require_once(/home/mecanocestas/public_html/config/init.php): Failed to open stream: No such file or directory in /home/mecanocestas/public_html/index.php on line 2
+[09-Mar-2026 03:59:33 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/mecanocestas/public_html/config/init.php' (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/mecanocestas/public_html/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/mecanocestas/public_html/index.php on line 2
+[09-Mar-2026 03:59:35 UTC] PHP Warning:  require_once(/home/mecanocestas/public_html/config/init.php): Failed to open stream: No such file or directory in /home/mecanocestas/public_html/index.php on line 2
+[09-Mar-2026 03:59:35 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/mecanocestas/public_html/config/init.php' (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/mecanocestas/public_html/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/mecanocestas/public_html/index.php on line 2
+[09-Mar-2026 03:59:36 UTC] PHP Warning:  require_once(/home/mecanocestas/public_html/config/init.php): Failed to open stream: No such file or directory in /home/mecanocestas/public_html/index.php on line 2
+[09-Mar-2026 03:59:36 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/mecanocestas/public_html/config/init.php' (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/mecanocestas/public_html/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/mecanocestas/public_html/index.php on line 2
+[09-Mar-2026 03:59:50 UTC] PHP Warning:  require_once(/home/mecanocestas/public_html/config/init.php): Failed to open stream: No such file or directory in /home/mecanocestas/public_html/index.php on line 2
+[09-Mar-2026 03:59:50 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/mecanocestas/public_html/config/init.php' (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/mecanocestas/public_html/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/mecanocestas/public_html/index.php on line 2
+[09-Mar-2026 03:59:51 UTC] PHP Warning:  require_once(/home/mecanocestas/public_html/config/init.php): Failed to open stream: No such file or directory in /home/mecanocestas/public_html/index.php on line 2
+[09-Mar-2026 03:59:51 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/mecanocestas/public_html/config/init.php' (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/mecanocestas/public_html/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/mecanocestas/public_html/index.php on line 2
+[09-Mar-2026 04:00:09 UTC] PHP Warning:  require_once(/home/mecanocestas/public_html/config/init.php): Failed to open stream: No such file or directory in /home/mecanocestas/public_html/index.php on line 2
+[09-Mar-2026 04:00:09 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/mecanocestas/public_html/config/init.php' (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/mecanocestas/public_html/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/mecanocestas/public_html/index.php on line 2
+[09-Mar-2026 04:01:21 UTC] PHP Warning:  require_once(/home/mecanocestas/public_html/config/init.php): Failed to open stream: No such file or directory in /home/mecanocestas/public_html/index.php on line 2
+[09-Mar-2026 04:01:21 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/mecanocestas/public_html/config/init.php' (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/mecanocestas/public_html/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/mecanocestas/public_html/index.php on line 2
+[09-Mar-2026 04:02:53 UTC] PHP Warning:  require_once(/home/mecanocestas/public_html/config/database.php): Failed to open stream: No such file or directory in /home/mecanocestas/public_html/config/init.php on line 10
+[09-Mar-2026 04:02:53 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/mecanocestas/public_html/config/database.php' (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/mecanocestas/public_html/config/init.php:10
+Stack trace:
+#0 /home/mecanocestas/public_html/index.php(2): require_once()
+#1 {main}
+  thrown in /home/mecanocestas/public_html/config/init.php on line 10
+[09-Mar-2026 04:02:56 UTC] PHP Warning:  require_once(/home/mecanocestas/public_html/config/database.php): Failed to open stream: No such file or directory in /home/mecanocestas/public_html/config/init.php on line 10
+[09-Mar-2026 04:02:56 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/mecanocestas/public_html/config/database.php' (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/mecanocestas/public_html/config/init.php:10
+Stack trace:
+#0 /home/mecanocestas/public_html/index.php(2): require_once()
+#1 {main}
+  thrown in /home/mecanocestas/public_html/config/init.php on line 10
+[09-Mar-2026 04:09:21 UTC] PHP Warning:  require_once(/var/private/database.php): Failed to open stream: No such file or directory in /home/mecanocestas/public_html/config/init.php on line 10
+[09-Mar-2026 04:09:21 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/var/private/database.php' (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/mecanocestas/public_html/config/init.php:10
+Stack trace:
+#0 /home/mecanocestas/public_html/index.php(2): require_once()
+#1 {main}
+  thrown in /home/mecanocestas/public_html/config/init.php on line 10
+[09-Mar-2026 04:09:28 UTC] PHP Warning:  require_once(/var/private/database.php): Failed to open stream: No such file or directory in /home/mecanocestas/public_html/config/init.php on line 10
+[09-Mar-2026 04:09:28 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/var/private/database.php' (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/mecanocestas/public_html/config/init.php:10
+Stack trace:
+#0 /home/mecanocestas/public_html/index.php(2): require_once()
+#1 {main}
+  thrown in /home/mecanocestas/public_html/config/init.php on line 10
+[09-Mar-2026 04:09:29 UTC] PHP Warning:  require_once(/var/private/database.php): Failed to open stream: No such file or directory in /home/mecanocestas/public_html/config/init.php on line 10
+[09-Mar-2026 04:09:29 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/var/private/database.php' (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/mecanocestas/public_html/config/init.php:10
+Stack trace:
+#0 /home/mecanocestas/public_html/index.php(2): require_once()
+#1 {main}
+  thrown in /home/mecanocestas/public_html/config/init.php on line 10
+[09-Mar-2026 04:09:30 UTC] PHP Warning:  require_once(/var/private/database.php): Failed to open stream: No such file or directory in /home/mecanocestas/public_html/config/init.php on line 10
+[09-Mar-2026 04:09:30 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/var/private/database.php' (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/mecanocestas/public_html/config/init.php:10
+Stack trace:
+#0 /home/mecanocestas/public_html/index.php(2): require_once()
+#1 {main}
+  thrown in /home/mecanocestas/public_html/config/init.php on line 10
+[09-Mar-2026 04:10:06 UTC] PHP Warning:  require_once(../../private/database.php): Failed to open stream: No such file or directory in /home/mecanocestas/public_html/config/init.php on line 10
+[09-Mar-2026 04:10:06 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../../private/database.php' (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/mecanocestas/public_html/config/init.php:10
+Stack trace:
+#0 /home/mecanocestas/public_html/index.php(2): require_once()
+#1 {main}
+  thrown in /home/mecanocestas/public_html/config/init.php on line 10
+[09-Mar-2026 04:10:07 UTC] PHP Warning:  require_once(../../private/database.php): Failed to open stream: No such file or directory in /home/mecanocestas/public_html/config/init.php on line 10
+[09-Mar-2026 04:10:07 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../../private/database.php' (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/mecanocestas/public_html/config/init.php:10
+Stack trace:
+#0 /home/mecanocestas/public_html/index.php(2): require_once()
+#1 {main}
+  thrown in /home/mecanocestas/public_html/config/init.php on line 10

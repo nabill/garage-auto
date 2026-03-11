@@ -27,7 +27,7 @@ require __DIR__ . '/../includes/header.php';
                                 </button>
     </div>
     <div class="col-md-6 mt-4 mt-md-0">
-                <img src="/assets/img/services/empty.png" alt="Changement de batterie" class="w-100 rounded-3 shadow-sm" style="height:400px;object-fit:cover;object-position:center;">
+                <img src="/assets/img/services/batterie.jpg" alt="Changement de batterie" class="w-100 rounded-3 shadow-sm" style="height:400px;object-fit:cover;object-position:center;">
     </div>
 </div>
 
@@ -35,7 +35,7 @@ require __DIR__ . '/../includes/header.php';
 
 <div class="row mb-5">
     <div class="col-md-6 mt-4 mt-md-0">
-        <img src="/assets/img/services/batterie3.png" alt="Entretien et vidange" class="w-100 rounded-3 shadow-sm" style="height:400px;object-fit:cover;object-position:center;">
+        <img src="/assets/img/services/batterie2.jpg" alt="Entretien et vidange" class="w-100 rounded-3 shadow-sm" style="height:400px;object-fit:cover;object-position:center;">
     </div>
     <div class="col-md-6">
         <h2 class="mb-4"><i class="bi bi-exclamation-triangle me-2" style="color:#ff5d17;margin-right:15px !important"></i>Quand faut-il changer la batterie?</h2>
@@ -89,7 +89,11 @@ require __DIR__ . '/../includes/header.php';
 <!-- CTA final -->
 <div class="card text-white mb-5 border-0" style="background:#111;">
     <div class="card-body text-center py-5">
-        <i class="bi bi-battery-charging mb-3 d-block" style="font-size:3rem;color:#ff5d17;"></i>
+        <svg style="    height: 61px;
+    width: 61px;
+    fill: #ff5d17;
+    margin-bottom: 5px;
+    margin-top: -5px;" fill="#000000" width="800px" height="800px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M 8 6 L 8 8 L 12 8 L 12 6 Z M 20 6 L 20 8 L 24 8 L 24 6 Z M 4 9 L 4 27 L 28 27 L 28 9 Z M 6 11 L 26 11 L 26 25 L 6 25 Z M 20 15 L 20 17 L 18 17 L 18 19 L 20 19 L 20 21 L 22 21 L 22 19 L 24 19 L 24 17 L 22 17 L 22 15 Z M 8 17 L 8 19 L 14 19 L 14 17 Z"></path></svg>
         <h2 class="mb-2">Votre batterie vous inquiète ?</h2>
         <p class="lead opacity-75 mb-4">Ne prenez pas le risque d'une panne. Nos techniciens diagnostiquent et remplacent votre batterie rapidement, avec les pièces adaptées à votre véhicule.</p>
         <div class="d-flex flex-wrap justify-content-center gap-3">

@@ -12,7 +12,7 @@ $footer_hours = get_opening_hours($pdo);
      <div class="row">
          <div class="col-12 col-lg-4">
              <img onclick="window.open('/');" 
-             style="max-width: 161px;cursor:pointer; margin-bottom:25px" src="/assets/img/logoV5.png" alt="">
+             style="max-width: 161px;cursor:pointer; margin-bottom:25px" src="/assets/img/logo-v5.png" alt="">
 
         
                 <table class="table table-sm mb-5">
