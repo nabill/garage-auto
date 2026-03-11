@@ -64,7 +64,9 @@ CREATE TABLE opening_hours (
     id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     day_of_week TINYINT NOT NULL UNIQUE,
     open_time TIME NULL,
-    close_time TIME NULL
+    close_time TIME NULL,
+    open_time2 TIME NULL,
+    close_time2 TIME NULL
 ) ENGINE=InnoDB;
 
 -- News

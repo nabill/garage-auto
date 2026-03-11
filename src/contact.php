@@ -70,6 +70,9 @@ require __DIR__ . '/includes/header.php';
                             <td>
                                 <?php if ($h_row['open_time'] && $h_row['close_time']): ?>
                                     <?= format_time($h_row['open_time']) ?> – <?= format_time($h_row['close_time']) ?>
+                                    <?php if ($h_row['open_time2'] && $h_row['close_time2']): ?>
+                                        &nbsp;/&nbsp;<?= format_time($h_row['open_time2']) ?> – <?= format_time($h_row['close_time2']) ?>
+                                    <?php endif; ?>
                                 <?php else: ?>
                                     <span class="text-muted">Fermé</span>
                                 <?php endif; ?>

@@ -24,7 +24,12 @@ $footer_hours = get_opening_hours($pdo);
                                 </td>
                             <td style="background-color:#f3f3f3">
                                 <?php if ($fh['open_time'] && $fh['close_time']): ?>
-                                    <?= format_time($fh['open_time']) ?> – <?= format_time($fh['close_time']) ?>
+                                    <p class="fs-5 mb-0" style="font-size:14px !important;color:black;line-height:19px;">
+                                        <?= format_time($fh['open_time']) ?> – <?= format_time($fh['close_time']) ?>
+                                        <?php if ($fh['open_time2'] && $fh['close_time2']): ?>
+                                            &nbsp;/&nbsp;<?= format_time($fh['open_time2']) ?> – <?= format_time($fh['close_time2']) ?>
+                                        <?php endif; ?>
+                                    </p>
                                 <?php else: ?>
                                     <p class="fs-5" style="font-size:14px !important;color:black;line-height: 19px;">Fermé</p>
                                 <?php endif; ?>
