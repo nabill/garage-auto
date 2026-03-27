@@ -52,7 +52,12 @@ require __DIR__ . '/includes/header.php';
                 <p class="fs-5" style="font-size: 18px !important;">3 Chemin des Arestieux, 33610 Cestas</p>
             </div>
             
-            <div class="d-flex" style="margin-bottom: 35px;">
+            <div class="d-flex" style="margin-bottom: 7px;">
+                <svg style="height: 27px;margin-right: 11px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57c.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.61 21 3 13.39 3 4c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.24 1.02l-2.21 2.2z" fill="currentColor"></path></svg>
+                <a href="tel:0618850740" class="fs-5" style="margin-top:3px;font-size: 18px !important;color:inherit;text-decoration:none;">06 18 85 07 40</a>
+            </div>
+
+            <div class="d-flex" style="margin-bottom: 37px;margin-top:13px">
                 <svg style="height: 29px;margin-right: 9px;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"><g fill="none"><path d="M5.25 4h13.5a3.25 3.25 0 0 1 3.245 3.066L22 7.25v9.5a3.25 3.25 0 0 1-3.066 3.245L18.75 20H5.25a3.25 3.25 0 0 1-3.245-3.066L2 16.75v-9.5a3.25 3.25 0 0 1 3.066-3.245L5.25 4h13.5h-13.5zM20.5 9.373l-8.15 4.29a.75.75 0 0 1-.603.043l-.096-.042L3.5 9.374v7.376a1.75 1.75 0 0 0 1.606 1.744l.144.006h13.5a1.75 1.75 0 0 0 1.744-1.607l.006-.143V9.373zM18.75 5.5H5.25a1.75 1.75 0 0 0-1.744 1.606L3.5 7.25v.429l8.5 4.473l8.5-4.474V7.25a1.75 1.75 0 0 0-1.607-1.744L18.75 5.5z" fill="currentColor"></path></g></svg>
                 <p class="fs-5" style="font-size: 18px !important;">contact@mecanocestas.com</p>
             </div>
