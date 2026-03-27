@@ -59,6 +59,37 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (empty($errors)) {
         $stmt = $pdo->prepare('INSERT INTO appointments (client_nom, client_tel, client_email, brand_id, model_id, description, date_rdv) VALUES (?, ?, ?, ?, ?, ?, ?)');
         $stmt->execute([$client_nom, $client_tel, $client_email, $brand_id, $model_id, $description, $date_rdv]);
+
+        // Fetch brand/model names for the email
+        $s = $pdo->prepare('SELECT nom FROM car_brands WHERE id = ?');
+        $s->execute([$brand_id]);
+        $brand_nom = $s->fetchColumn() ?: $brand_id;
+
+        $s = $pdo->prepare('SELECT nom FROM car_models WHERE id = ?');
+        $s->execute([$model_id]);
+        $model_nom = $s->fetchColumn() ?: $model_id;
+
+        $mail_body = '<!DOCTYPE html><html><head><meta charset="UTF-8"></head><body style="font-family:Arial,sans-serif;color:#222;max-width:600px;margin:0 auto;padding:24px">'
+            . '<div style="border-left:4px solid #ff5d17;padding-left:16px;margin-bottom:24px">'
+            . '<h2 style="margin:0;color:#ff5d17">Nouvelle demande de rendez-vous</h2></div>'
+            . '<table style="width:100%;border-collapse:collapse;margin-bottom:24px">'
+            . '<tr><td style="padding:8px 12px;background:#f3f3f3;font-weight:600;width:120px">Nom</td><td style="padding:8px 12px;border-bottom:1px solid #eee">' . htmlspecialchars($client_nom) . '</td></tr>'
+            . '<tr><td style="padding:8px 12px;background:#f3f3f3;font-weight:600">Téléphone</td><td style="padding:8px 12px;border-bottom:1px solid #eee">' . htmlspecialchars($client_tel) . '</td></tr>'
+            . '<tr><td style="padding:8px 12px;background:#f3f3f3;font-weight:600">Email</td><td style="padding:8px 12px;border-bottom:1px solid #eee"><a href="mailto:' . htmlspecialchars($client_email) . '">' . htmlspecialchars($client_email) . '</a></td></tr>'
+            . '<tr><td style="padding:8px 12px;background:#f3f3f3;font-weight:600">Véhicule</td><td style="padding:8px 12px;border-bottom:1px solid #eee">' . htmlspecialchars("$brand_nom $model_nom") . '</td></tr>'
+            . '<tr><td style="padding:8px 12px;background:#f3f3f3;font-weight:600">Date</td><td style="padding:8px 12px;border-bottom:1px solid #eee">' . htmlspecialchars($date_rdv) . '</td></tr>'
+            . '</table>'
+            . '<div style="background:#f9f9f9;border:1px solid #eee;border-radius:4px;padding:16px">'
+            . '<p style="margin:0 0 8px;font-weight:600">Description :</p>'
+            . '<p style="margin:0;white-space:pre-wrap">' . htmlspecialchars($description) . '</p></div>'
+            . '</body></html>';
+        @mail(
+            'contact@mecanocestas.com',
+            '=?UTF-8?B?' . base64_encode("Nouvelle demande RDV — $client_nom ($date_rdv)") . '?=',
+            $mail_body,
+            "From: noreply@mecanocestas.com\r\nReply-To: $client_email\r\nContent-Type: text/html; charset=UTF-8"
+        );
+
         redirect('/rendez-vous-confirmation.php');
     }
 }

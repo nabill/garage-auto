@@ -24,12 +24,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $stmt = $pdo->prepare('INSERT INTO contact_messages (nom, email, sujet, message) VALUES (?, ?, ?, ?)');
         $stmt->execute([$nom, $email, $sujet, $message]);
 
-        // Attempt to send email (silent fail if SMTP not configured)
+        // Send notification email
+        $mail_body = '<!DOCTYPE html><html><head><meta charset="UTF-8"></head><body style="font-family:Arial,sans-serif;color:#222;max-width:600px;margin:0 auto;padding:24px">'
+            . '<div style="border-left:4px solid #ff5d17;padding-left:16px;margin-bottom:24px">'
+            . '<h2 style="margin:0;color:#ff5d17">Nouveau message de contact</h2></div>'
+            . '<table style="width:100%;border-collapse:collapse;margin-bottom:24px">'
+            . '<tr><td style="padding:8px 12px;background:#f3f3f3;font-weight:600;width:120px">Nom</td><td style="padding:8px 12px;border-bottom:1px solid #eee">' . htmlspecialchars($nom) . '</td></tr>'
+            . '<tr><td style="padding:8px 12px;background:#f3f3f3;font-weight:600">Email</td><td style="padding:8px 12px;border-bottom:1px solid #eee"><a href="mailto:' . htmlspecialchars($email) . '">' . htmlspecialchars($email) . '</a></td></tr>'
+            . '<tr><td style="padding:8px 12px;background:#f3f3f3;font-weight:600">Sujet</td><td style="padding:8px 12px;border-bottom:1px solid #eee">' . htmlspecialchars($sujet) . '</td></tr>'
+            . '</table>'
+            . '<div style="background:#f9f9f9;border:1px solid #eee;border-radius:4px;padding:16px">'
+            . '<p style="margin:0 0 8px;font-weight:600">Message :</p>'
+            . '<p style="margin:0;white-space:pre-wrap">' . htmlspecialchars($message) . '</p></div>'
+            . '</body></html>';
         @mail(
-            'contact@garage-auto.fr',
-            "Nouveau message : $sujet",
-            "De : $nom ($email)\n\n$message",
-            "From: noreply@garage-auto.fr\r\nReply-To: $email"
+            'contact@mecanocestas.com',
+            '=?UTF-8?B?' . base64_encode("Nouveau message : $sujet") . '?=',
+            $mail_body,
+            "From: noreply@mecanocestas.com\r\nReply-To: $email\r\nContent-Type: text/html; charset=UTF-8"
         );
 
         $success = true;
