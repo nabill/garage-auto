@@ -1,6 +1,6 @@
 <?php
 $db_host = getenv('DB_HOST') ?: '94.130.133.23';
-$db_name = getenv('DB_NAME') ?: 'mecanocestas_garage_auto';
+$db_name = getenv('DB_NAME') ?: 'mecanocestas_live';
 $db_user = getenv('DB_USER') ?: 'mecanocestas_mecanocestas';
 $db_pass = getenv('DB_PASS') ?: 'BaGQ_gu-cG]hN#Lu';
 
