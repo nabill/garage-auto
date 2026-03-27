@@ -49,7 +49,7 @@ require __DIR__ . '/includes/header.php';
 
             <div class="d-flex" style="margin-bottom: 7px;">
                 <svg style="height:23px;margin-right: 15px;margin-left: 6px;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 384 512"><path d="M172.268 501.67C26.97 291.031 0 269.413 0 192C0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67c-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80s-80 35.817-80 80s35.817 80 80 80z" fill="currentColor"></path></svg>
-                <p class="fs-5" style="font-size: 18px !important;">3 Chemin des Arestieux<br>33610 Cestas</p>
+                <p class="fs-5" style="font-size: 18px !important;">3 Chemin des Arestieux, 33610 Cestas</p>
             </div>
             
             <div class="d-flex" style="margin-bottom: 35px;">

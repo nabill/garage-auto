@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= h($page_title ?? 'Garage Auto') ?> — Garage Auto</title>
+    <title><?= h($page_title ?? 'Mecano Auto') ?> — Mecano Auto</title>
    <!-- Google tag (gtag.js) -->
    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H2SV24J5C4"></script>
    <script>
@@ -222,8 +222,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                 <a class="btn" style="padding: 11px;border-width:0px;font-size:17px;" href="/contact.php">Contact</a> -->
             </div>
-            <div>
-                <a href="/rendez-vous.php" class="button-02 w-inline-block" 
+            <div style="display:flex;align-items:center;gap:18px;">
+                <a href="tel:0618850740" class="d-none d-sm-flex" style="margin-top:1px;align-items:center;gap:7px;color:#000;text-decoration:none;font-size:15px;font-weight:600;font-family:'Inter UI',Arial,sans-serif;">
+                    <i class="bi bi-telephone-fill" style="color:#ff5d17;font-size:16px;"></i> 06 18 85 07 40
+                </a>
+                <a href="/rendez-vous.php" class="button-02 w-inline-block"
             style="height: 40px; width: 205px; padding-left: 0px; padding-right: 5px;">
             <div class="button-icon-box">
               <img src="/assets/svg/67ee275588f13b2e796f3c2b_arrow-right.svg" loading="lazy" alt="" class="button-01-icon">
@@ -272,6 +275,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <a class="btn" style="border-left-width: 0px; border-right-width: 0px; text-align: start;border-color:#dddddd;font-size:15px;padding-left:39px;" href="/services/diagnostic.php">Diagnostic électronique</a>
             <a class="btn" style="border-left-width: 0px; border-right-width: 0px; text-align: start;border-color:#dddddd;font-size:15px;padding-left:39px;" href="/services/controle-technique.php">Contrôle technique</a>
             <a class="btn" style="border-left-width: 0px; border-right-width: 0px; text-align: start;border-color:#dddddd;font-size:17px;" href="/contact.php">Contact</a>
+            <a class="btn" style="border-left-width: 0px; border-right-width: 0px; text-align: start;border-color:#dddddd;font-size:17px;font-weight:600;" href="tel:0618850740"><i class="bi bi-telephone-fill" style="margin-right:5px"></i> 06 18 85 07 40</a>
         </div>
     </div>
 </nav>

@@ -19,19 +19,19 @@ $footer_hours = get_opening_hours($pdo);
                     <tbody>
                     <?php foreach ($footer_hours as $fh): ?>
                         <tr>
-                            <td style="background-color:#f3f3f3;width:100px">
+                            <td style="background-color:#f3f3f3;padding-top: 10px; padding-bottom: 0px;width:90px;">
                                 <p class="fs-5" style="font-weight: 600;font-size:14px !important;color:black;line-height: 19px;"><?= day_name($fh['day_of_week']) ?></p>
                                 </td>
-                            <td style="background-color:#f3f3f3">
+                            <td style="background-color:#f3f3f3;padding-top: 10px; padding-bottom: 0px;">
                                 <?php if ($fh['open_time'] && $fh['close_time']): ?>
-                                    <p class="fs-5 mb-0" style="font-size:14px !important;color:black;line-height:19px;">
+                                    <p class="fs-5 mb-0" style="font-size:13px !important;color:#999;line-height:19px;">
                                         <?= format_time($fh['open_time']) ?> – <?= format_time($fh['close_time']) ?>
                                         <?php if ($fh['open_time2'] && $fh['close_time2']): ?>
-                                            &nbsp;/&nbsp;<?= format_time($fh['open_time2']) ?> – <?= format_time($fh['close_time2']) ?>
+                                            /&nbsp;<?= format_time($fh['open_time2']) ?> – <?= format_time($fh['close_time2']) ?>
                                         <?php endif; ?>
                                     </p>
                                 <?php else: ?>
-                                    <p class="fs-5" style="font-size:14px !important;color:black;line-height: 19px;">Fermé</p>
+                                    <p class="fs-5" style="font-size:13px !important;color:#999;line-height: 19px;">Fermé</p>
                                 <?php endif; ?>
                             </td>
                         </tr>
@@ -39,7 +39,7 @@ $footer_hours = get_opening_hours($pdo);
                     </tbody>
                 </table>
          </div>
-         <div class="col-12 col-lg-4">
+         <div class="col-12 col-lg-4 mb-3">
              <div><a class="link" href="/services/entretien-vidange.php">Entretien / Vidange</a></div>
              <div><a class="link" href="/services/revision.php">Révision Premium</a></div>
              <div><a class="link" href="/services/mecanique-generale.php">Mécanique générale</a></div>
@@ -55,8 +55,8 @@ $footer_hours = get_opening_hours($pdo);
          <div class="col-12 col-lg-4 mt-3">
             <p class="fs-5" style="font-size:16px !important;color:black;line-height: 19px;">3 Chemin des Arestieux</p>
             <p class="fs-5" style="font-size:16px !important;color:black;line-height: 19px;">33610 Cestas, France</p>
-            <p class="fs-5" style="font-size:16px !important;color:black;line-height: 19px;">contact@mecanocestas.com</p>
-            <div style="margin-left: -6px;"><a class="link" href="/contact.php">Contact</a></div>
+            <div style="margin-left: -6px;"><a class="link" href="tel:0618850740">Tel. 06 18 85 07 40</a></div>
+            <div style="margin-left: -6px;"><a class="link" href="/contact.php">contact@mecanocestas.com</a></div>
          </div>
      </div>
      <div class="space5"></div>
