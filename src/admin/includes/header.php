@@ -9,9 +9,13 @@
     <link href="/assets/css/admin.css?v=<?= APP_VERSION ?>" rel="stylesheet">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="    padding-top: 0px;
+    padding-bottom: 3px;">
     <div class="container-fluid">
-        <a class="navbar-brand" href="/admin/"><i class="bi bi-gear-fill"></i> Admin Garage</a>
+        <a class="navbar-brand" href="/admin/">
+        <img src="/assets/img/logo-blanc.png" alt="" style="height: 27px;">    
+        </a>
+        <!-- <a class="navbar-brand" href="/admin/"><i class="bi bi-gear-fill"></i> Admin Garage</a> -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#adminNav">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -26,15 +30,16 @@
                         <li><a class="dropdown-item" href="/admin/modeles.php">Modèles</a></li>
                     </ul>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item"><a class="nav-link" href="/admin/horaires.php">Horaires</a></li>
+                <!-- <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Planning</a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="/admin/jours-fermes.php">Jours fermés</a></li>
                         <li><a class="dropdown-item" href="/admin/jours-hebdo.php">Fermeture hebdo</a></li>
                         <li><a class="dropdown-item" href="/admin/horaires.php">Horaires</a></li>
                     </ul>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="/admin/actualites.php">Actualités</a></li>
+                </li> -->
+                <!-- <li class="nav-item"><a class="nav-link" href="/admin/actualites.php">Actualités</a></li> -->
                 <li class="nav-item"><a class="nav-link" href="/admin/messages.php">Messages</a></li>
             </ul>
             <ul class="navbar-nav">

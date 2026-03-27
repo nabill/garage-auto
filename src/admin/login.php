@@ -43,7 +43,10 @@ $page_title = 'Connexion';
         <div class="col-md-5">
             <div class="card shadow">
                 <div class="card-body p-4">
-                    <h3 class="text-center mb-4"><i class="bi bi-gear-fill"></i> Administration</h3>
+                    <div class="mb-4 text-center">
+                    <img src="/assets/img/logo.png" alt="" style='height:45px'>
+                    </div>
+                    <!-- <h3 class="text-center mb-4"><i class="bi bi-gear-fill"></i> Administration</h3> -->
                     <?= display_flash() ?>
                     <?php if ($error): ?>
                         <div class="alert alert-danger"><?= h($error) ?></div>
@@ -58,7 +61,9 @@ $page_title = 'Connexion';
                             <label for="password" class="form-label">Mot de passe</label>
                             <input type="password" class="form-control" id="password" name="password" required>
                         </div>
-                        <button type="submit" class="btn btn-primary w-100">Se connecter</button>
+                        
+                        <button type="submit" class="btn btn-primary w-100"
+                        style="display:inline-flex;align-items:center;gap:9px;background:#ff5d17;color:#fff;font-weight:700;font-size:16px;padding:14px 28px;border-radius:8px;text-decoration:none;transition:background .15s;border: 0px;">Se connecter</button>
                     </form>
                 </div>
             </div>
