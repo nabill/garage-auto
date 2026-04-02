@@ -23,6 +23,7 @@
             <ul class="navbar-nav me-auto">
                 <li class="nav-item"><a class="nav-link" href="/admin/">Tableau de bord</a></li>
                 <li class="nav-item"><a class="nav-link" href="/admin/rendez-vous.php">Rendez-vous</a></li>
+                <li class="nav-item"><a class="nav-link" href="/admin/devis.php">Devis</a></li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Véhicules</a>
                     <ul class="dropdown-menu">

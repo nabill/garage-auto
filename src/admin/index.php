@@ -8,7 +8,9 @@ $page_title = 'Tableau de bord';
 $rdv_today = $pdo->query("SELECT COUNT(*) FROM appointments WHERE date_rdv = CURDATE()")->fetchColumn();
 $rdv_pending = $pdo->query("SELECT COUNT(*) FROM appointments WHERE statut = 'en_attente'")->fetchColumn();
 $rdv_total = $pdo->query("SELECT COUNT(*) FROM appointments")->fetchColumn();
-$messages_unread = $pdo->query("SELECT COUNT(*) FROM contact_messages WHERE is_read = 0")->fetchColumn();
+$messages_unread  = $pdo->query("SELECT COUNT(*) FROM contact_messages WHERE is_read = 0")->fetchColumn();
+$devis_pending    = $pdo->query("SELECT COUNT(*) FROM devis_requests WHERE statut = 'en_attente'")->fetchColumn();
+$devis_total      = $pdo->query("SELECT COUNT(*) FROM devis_requests")->fetchColumn();
 
 // Upcoming appointments
 $upcoming = $pdo->query("SELECT a.*, cb.nom AS marque, cm.nom AS modele
@@ -35,7 +37,7 @@ require __DIR__ . '/includes/header.php';
     <div class="col-md-3">
         <div class="card text-white bg-warning">
             <div class="card-body">
-                <h5 class="card-title">En attente</h5>
+                <h5 class="card-title">RDV en attente</h5>
                 <p class="display-6"><?= $rdv_pending ?></p>
             </div>
         </div>
@@ -55,6 +57,17 @@ require __DIR__ . '/includes/header.php';
                 <p class="display-6"><?= $messages_unread ?></p>
             </div>
         </div>
+    </div>
+    <div class="col-md-3">
+        <a href="/admin/devis.php" style="text-decoration:none;">
+            <div class="card text-white" style="background:#ff5d17;">
+                <div class="card-body">
+                    <h5 class="card-title">Devis en attente</h5>
+                    <p class="display-6"><?= $devis_pending ?></p>
+                    <small style="opacity:.8"><?= $devis_total ?> total</small>
+                </div>
+            </div>
+        </a>
     </div>
 </div>
 
