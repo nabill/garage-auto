@@ -223,19 +223,36 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <a class="btn" style="padding: 11px;border-width:0px;font-size:17px;" href="/contact.php">Contact</a> -->
             </div>
             <div style="display:flex;align-items:center;gap:18px;">
-                <a href="tel:0618850740" class="d-none d-sm-flex" style="margin-top:1px;align-items:center;gap:7px;color:#000;text-decoration:none;font-size:15px;font-weight:600;font-family:'Inter UI',Arial,sans-serif;">
+                <a href="tel:0618850740" class="d-none d-md-flex" style="margin-top:1px;align-items:center;gap:7px;color:#000;text-decoration:none;font-size:15px;font-weight:600;font-family:'Inter UI',Arial,sans-serif;">
                     <i class="bi bi-telephone-fill" style="color:#ff5d17;font-size:16px;"></i> 06 18 85 07 40
                 </a>
+                <a href="/devis.php" class="button-02 w-inline-block d-none d-sm-flex"
+            style="height: 40px; width: 205px; padding-left: 0px; padding-right: 5px;">
+              <div class="button-icon-box">
+                <img src="/assets/svg/67ee275588f13b2e796f3c2b_arrow-right.svg" loading="lazy" alt="" class="button-01-icon">
+                <img src="/assets/svg/67eed5c086acbfab6b5131c3_arrow-right.svg" loading="lazy" alt="" class="button-01-icon hover-icon">
+              </div>
+              <div class="button-text-box">
+                <div class="button-text">
+                  <div class="button-02-text">Demande de devis</div>
+                  <div class="button-02-text" style="margin-top:-1px;color:white">Demande de devis</div>
+                </div>
+              </div>
+              <div class="button-02-bg"></div>
+              <div class="button-02-hover-bg"></div>
+            </a>
                 <a href="/rendez-vous.php" class="button-02 w-inline-block"
             style="height: 40px; width: 205px; padding-left: 0px; padding-right: 5px;">
-            <div class="button-icon-box">
-              <img src="/assets/svg/67ee275588f13b2e796f3c2b_arrow-right.svg" loading="lazy" alt="" class="button-01-icon">
-              <img src="/assets/svg/67eed5c086acbfab6b5131c3_arrow-right.svg" loading="lazy" alt="" class="button-01-icon hover-icon">
-            </div>
-            <div class="button-text-box"><div class="button-text">
-              <div class="button-02-text">Prendre rendez-vous</div>
-              <div class="button-02-text" style="margin-top:-1px; color:white">Prendre rendez-vous</div>
-            </div></div>
+              <div class="button-icon-box">
+                <img src="/assets/svg/67ee275588f13b2e796f3c2b_arrow-right.svg" loading="lazy" alt="" class="button-01-icon">
+                <img src="/assets/svg/67eed5c086acbfab6b5131c3_arrow-right.svg" loading="lazy" alt="" class="button-01-icon hover-icon">
+              </div>
+              <div class="button-text-box">
+                <div class="button-text">
+                  <div class="button-02-text">Prendre rendez-vous</div>
+                  <div class="button-02-text" style="margin-top:-1px; color:white">Prendre rendez-vous</div>
+                </div>
+              </div>
             <div class="button-02-bg"></div>
             <div class="button-02-hover-bg"></div>
           </a>
@@ -260,8 +277,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
     <div class="mobile-menu">
         <div>
-        
             <a class="btn" style="border-left-width: 0px; border-right-width: 0px; text-align: start;border-color:#dddddd;font-size:17px;" href="/">Accueil</a>
+            <a class="btn" style="border-left-width: 0px; border-right-width: 0px; text-align: start;border-color:#dddddd;font-size:17px;" href="/devis.php">Demande de devis</a>
             <a class="btn" style="border-left-width: 0px; border-right-width: 0px; text-align: start;border-color:#dddddd;font-size:17px;font-weight:600;" href="/services/">Services</a>
             <a class="btn" style="border-left-width: 0px; border-right-width: 0px; text-align: start;border-color:#dddddd;font-size:15px;padding-left:39px;" href="/services/entretien-vidange.php">Entretien / Vidange</a>
             <a class="btn" style="border-left-width: 0px; border-right-width: 0px; text-align: start;border-color:#dddddd;font-size:15px;padding-left:39px;" href="/services/revision.php">Révision Premium</a>

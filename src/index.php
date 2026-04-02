@@ -17,6 +17,9 @@ require __DIR__ . '/includes/header.php';
                 Mécanique, entretien, diagnostics rapides, prise en charge immédiate à Mecano Auto Cestas.
             </p>
             <div style="display:flex;flex-wrap:wrap;gap:14px;">
+                <a href="/devis.php" style="display:inline-flex;align-items:center;gap:9px;background:#ff5d17;color:#fff;font-weight:700;font-size:16px;padding:14px 28px;border-radius:8px;text-decoration:none;transition:background .15s;">
+                    <i class="bi bi-clipboard-check"></i> Demande de devis
+                </a>
                 <a href="/rendez-vous.php" style="display:inline-flex;align-items:center;gap:9px;background:#ff5d17;color:#fff;font-weight:700;font-size:16px;padding:14px 28px;border-radius:8px;text-decoration:none;transition:background .15s;">
                     <i class="bi bi-calendar-plus"></i> Prendre rendez-vous
                 </a>
