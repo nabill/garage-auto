@@ -66,7 +66,7 @@ require __DIR__ . '/includes/header.php';
             
             <div class="d-flex" style="margin-bottom: 7px;">
                 <svg style="height: 27px;margin-right: 11px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57c.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.61 21 3 13.39 3 4c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.24 1.02l-2.21 2.2z" fill="currentColor"></path></svg>
-                <a href="tel:0618850740" class="fs-5" style="margin-top:3px;font-size: 18px !important;color:inherit;text-decoration:none;">06 18 85 07 40</a>
+                <a href="tel:0768708389" class="fs-5" style="margin-top:3px;font-size: 18px !important;color:inherit;text-decoration:none;">07 68 70 83 89</a>
             </div>
 
             <div class="d-flex" style="margin-bottom: 37px;margin-top:13px">

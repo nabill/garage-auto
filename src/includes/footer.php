@@ -55,7 +55,7 @@ $footer_hours = get_opening_hours($pdo);
          <div class="col-12 col-lg-4 mt-3">
             <p class="fs-5" style="font-size:16px !important;color:black;line-height: 19px;">3 Chemin des Arestieux</p>
             <p class="fs-5" style="font-size:16px !important;color:black;line-height: 19px;">33610 Cestas, France</p>
-            <div style="margin-left: -6px;"><a class="link" href="tel:0618850740">Tel. 06 18 85 07 40</a></div>
+            <div style="margin-left: -6px;"><a class="link" href="tel:0768708389">Tel. 07 68 70 83 89</a></div>
             <div style="margin-left: -6px;"><a class="link" href="/contact.php">contact@mecanocestas.com</a></div>
          </div>
      </div>
